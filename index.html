@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<link rel="icon" type="image/png" sizes="128x128" href="data:image/png;base64,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"><link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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"><link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Safa Hotel Network — Mitra Hotel Umroh B2B</title>
+<meta name="description" content="Safa Hotel Network — mitra hotel terpercaya untuk agen travel umroh Indonesia. Harga B2B, 50+ hotel Makkah & Madinah.">
+<meta name="keywords" content="hotel umroh, mitra hotel arab saudi, agen umroh, hotel makkah, hotel madinah, B2B umroh">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://safagroup.id">
+<meta property="og:title" content="Safa Hotel Network — Hotel Partner for Umrah Agencies">
+<meta property="og:description" content="Mitra hotel terpercaya untuk agen travel umroh. 50+ hotel bintang di Makkah dan Madinah.">
+<meta property="og:image" content="https://safagroup.id/og-image.jpg">
+<meta property="og:url" content="https://safagroup.id">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Safa Hotel Network — Hotel Partner for Umrah Agencies">
+<meta name="twitter:image" content="https://safagroup.id/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:hidden}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:#060f1c}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#c9a84c,#9a7030);border-radius:3px}
+:root{
+  --navy:#08111e;--navy2:#0d1f35;--navy3:#162540;
+  --gold:#DB9200;--gold2:#F0A800;--gold3:#A36C00;
+  --off:#f7f3ec;--white:#fff;
+  --muted:#7a8fa0;--text:#3d4f5c;--border:rgba(219,146,0,.15);
+  --fh:'Cormorant Garamond',serif;--fb:'DM Sans',sans-serif
+}
+body{font-family:var(--fb);background:var(--white);color:var(--navy);overflow-x:hidden;max-width:100vw}
+a{text-decoration:none;color:inherit}
+p{line-height:1.8;color:var(--text)}
+h1,h2,h3,h4{font-family:var(--fh);line-height:1.15;font-weight:600}
+h1{font-size:clamp(2.4rem,5vw,4.2rem)}
+h2{font-size:clamp(1.9rem,3.5vw,3.1rem)}
+h3{font-size:clamp(1.05rem,1.8vw,1.35rem)}
+.container{max-width:1240px;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+.section{padding:clamp(4.5rem,9vw,7.5rem) 0}
+
+/* Gold gradient text */
+.gt{background:linear-gradient(135deg,var(--gold3),var(--gold2) 50%,var(--gold));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* Label pill */
+.lbl{display:inline-flex;align-items:center;gap:.7rem;
+     font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+     color:var(--gold);margin-bottom:1.1rem}
+.lbl::before,.lbl::after{content:'';display:block;width:22px;height:1px;
+    background:linear-gradient(90deg,transparent,var(--gold));opacity:.6}
+.lbl::after{background:linear-gradient(270deg,transparent,var(--gold))}
+
+/* Reveal */
+[data-r]{opacity:0;transition:opacity .8s cubic-bezier(.22,.61,.36,1),
+          transform .8s cubic-bezier(.22,.61,.36,1)}
+[data-r=up]{transform:translateY(50px)}
+[data-r=left]{transform:translateX(-50px)}
+[data-r=right]{transform:translateX(50px)}
+[data-r=sc]{transform:scale(.88)}
+[data-r].vis{opacity:1;transform:none}
+
+/* ── NAVBAR ── */
+#nav{position:fixed;top:0;left:0;right:0;z-index:900;transition:all .4s ease}
+#nav.solid{background:rgba(8,17,30,.92);backdrop-filter:blur(20px);
+           -webkit-backdrop-filter:blur(20px);
+           border-bottom:1px solid rgba(219,146,0,.1);
+           box-shadow:0 4px 40px rgba(0,0,0,.4)}
+.ni{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0}
+.nlogo{display:flex;align-items:center;gap:.85rem}
+.nlogo img{height:40px;width:40px;display:block;border-radius:8px;object-fit:cover;flex-shrink:0}
+.nbrand{display:flex;flex-direction:column;line-height:1}
+.nbname{font-family:var(--fh);font-size:1.08rem;font-weight:600;color:#fff;letter-spacing:.01em;margin-bottom:.2rem}
+.nbtag{font-size:.54rem;font-weight:500;color:var(--gold);letter-spacing:.15em;text-transform:uppercase}
+@media(max-width:520px){.nbrand{display:none}}
+.nlinks{display:flex;gap:clamp(1rem,2.5vw,2.2rem);list-style:none}
+.nlinks a{font-size:.81rem;font-weight:500;color:rgba(255,255,255,.7);
+          letter-spacing:.06em;position:relative;padding-bottom:4px;transition:color .25s}
+.nlinks a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;
+                 background:var(--gold);transition:width .3s ease}
+.nlinks a:hover{color:var(--gold)}
+.nlinks a:hover::after{width:100%}
+.nright{display:flex;align-items:center;gap:1rem}
+.lpill{display:flex;background:rgba(255,255,255,.07);border-radius:100px;
+       padding:3px;gap:2px;border:1px solid rgba(255,255,255,.1)}
+.lbtn{background:none;border:none;padding:4px 13px;border-radius:100px;
+      font-size:.71rem;font-weight:600;letter-spacing:.08em;
+      color:rgba(255,255,255,.45);cursor:pointer;
+      transition:all .25s;font-family:var(--fb)}
+.lbtn.on{background:linear-gradient(135deg,var(--gold3),var(--gold));color:#fff}
+.hbg{display:none;flex-direction:column;gap:5px;background:none;
+     border:none;cursor:pointer;padding:4px}
+.hbg span{display:block;width:22px;height:1.5px;background:#fff;
+          border-radius:2px;transition:all .3s}
+.hbg.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.hbg.open span:nth-child(2){opacity:0}
+.hbg.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mnav{display:none;flex-direction:column;
+      background:rgba(8,17,30,.97);backdrop-filter:blur(20px);
+      padding:1rem 1.5rem 2rem;border-top:1px solid rgba(219,146,0,.1)}
+.mnav a{display:block;padding:.8rem 0;color:rgba(255,255,255,.75);
+        font-size:.93rem;border-bottom:1px solid rgba(255,255,255,.06);transition:color .2s}
+.mnav a:hover{color:var(--gold)}
+.mnav.open{display:flex}
+
+/* ── HERO ── */
+#hero{min-height:100vh;background:linear-gradient(135deg,#0e2040 0%,#112545 40%,#0d1f38 100%);position:relative;
+      overflow:hidden;display:flex;align-items:center}
+#ptx{position:absolute;inset:0;z-index:0;width:100%;height:100%}
+#h3c{position:relative;width:100%;height:100%;z-index:1;pointer-events:none;display:block}
+.hrow{display:flex;align-items:center;gap:2rem;position:relative;z-index:2;padding:clamp(5rem,8vw,7rem) 0 3rem;min-height:90vh}
+.hleft{flex:0 0 50%;max-width:50%}
+.hright{flex:0 0 50%;max-width:50%;height:min(62vh,580px);position:relative}
+.hcont{position:relative;z-index:2;padding:clamp(6rem,10vw,8rem) 0 4rem;width:50%;text-align:left}
+.heyebrow{display:inline-flex;align-items:center;gap:.75rem;
+          font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+          color:var(--gold);margin-bottom:1.75rem;
+          padding:.48rem 1.2rem;border:1px solid rgba(219,146,0,.3);border-radius:100px;
+          background:rgba(219,146,0,.04)}
+.heyebrow::before{content:'';width:6px;height:6px;border-radius:50%;
+                  background:var(--gold);animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3;transform:scale(.5)}}
+.hh1{color:#fff;margin-bottom:1.5rem;font-size:clamp(2.4rem,5vw,4rem);line-height:1.08}
+.hh1 .ln{overflow:hidden;display:block}
+.hh1 .ln span{display:block;opacity:0;
+              animation:su .9s cubic-bezier(.22,.61,.36,1) forwards}
+.hh1 .ln:nth-child(1) span{animation-delay:.2s}
+.hh1 .ln:nth-child(2) span{animation-delay:.38s}
+.hh1 .ln:nth-child(3) span{animation-delay:.56s}
+@keyframes su{from{transform:translateY(110%);opacity:0}to{transform:none;opacity:1}}
+.hsub{color:rgba(255,255,255,.58);font-size:1.02rem;line-height:1.85;
+      margin-bottom:2.5rem;max-width:470px;
+      animation:fi .9s .75s ease forwards;opacity:0}
+@keyframes fi{to{opacity:1}}
+.hbtns{display:flex;gap:1rem;flex-wrap:wrap;animation:fi .9s .95s ease forwards;opacity:0}
+.bg{background:linear-gradient(135deg,var(--gold3),var(--gold),var(--gold2));
+    color:var(--navy);padding:.9rem 2rem;border-radius:7px;font-weight:700;
+    font-size:.87rem;letter-spacing:.04em;font-family:var(--fb);border:none;cursor:pointer;
+    display:inline-flex;align-items:center;gap:.5rem;
+    box-shadow:0 4px 28px rgba(219,146,0,.38);transition:all .25s;position:relative;overflow:hidden}
+.bg::after{content:'';position:absolute;top:0;left:-120%;width:60%;height:100%;
+           background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);
+           transition:left .55s ease}
+.bg:hover{transform:translateY(-2px);box-shadow:0 8px 44px rgba(219,146,0,.55)}
+.bg:hover::after{left:140%}
+.bgl{background:rgba(255,255,255,.07);color:#fff;padding:.9rem 2rem;border-radius:7px;
+     font-weight:500;font-size:.87rem;letter-spacing:.04em;
+     border:1px solid rgba(255,255,255,.2);display:inline-flex;align-items:center;gap:.5rem;
+     backdrop-filter:blur(8px);transition:all .25s}
+.bgl:hover{background:rgba(255,255,255,.12);border-color:var(--gold);color:var(--gold)}
+.hstats{display:flex;gap:2.5rem;margin-top:3.5rem;padding-top:2.5rem;
+        border-top:1px solid rgba(255,255,255,.08);
+        animation:fi .9s 1.1s ease forwards;opacity:0;flex-wrap:wrap}
+.hsi .sn{font-family:var(--fh);font-size:2.2rem;font-weight:700;
+         color:var(--gold2);line-height:1;margin-bottom:.3rem}
+.hsi .sl{font-size:.7rem;color:rgba(255,255,255,.4);letter-spacing:.08em}
+
+/* ── MARQUEE ── */
+.mwrap{background:linear-gradient(135deg,var(--gold3),var(--gold),var(--gold2));
+       padding:.7rem 0;overflow:hidden;position:relative;max-width:100vw}
+.mtrack{display:inline-flex;animation:mq 38s linear infinite;white-space:nowrap}
+.mwrap:hover .mtrack{animation-play-state:paused}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.mit{display:inline-flex;align-items:center;gap:1.5rem;padding:0 2.5rem;
+     font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--navy)}
+.mdot{width:4px;height:4px;border-radius:50%;background:rgba(8,17,30,.35)}
+
+/* ── ABOUT ── */
+#about{background:var(--white);position:relative;overflow:hidden}
+#about::before{content:'';position:absolute;right:-200px;top:-200px;
+               width:500px;height:500px;border-radius:50%;
+               background:radial-gradient(circle,rgba(219,146,0,.04) 0%,transparent 70%);
+               pointer-events:none}
+.awrap{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.aleft{position:relative}
+.abignum{font-family:var(--fh);font-size:clamp(6rem,12vw,10rem);font-weight:700;
+         line-height:.9;color:var(--gold);opacity:.07;
+         position:absolute;top:-2rem;left:-1rem;pointer-events:none;user-select:none}
+.aleft h2{color:var(--navy);margin-bottom:1.5rem;position:relative}
+.aleft p{color:var(--text);margin-bottom:1.1rem;position:relative}
+.aright{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.asc{background:var(--off);border-radius:16px;padding:1.75rem 1.5rem;
+     position:relative;overflow:hidden;transition:all .35s;
+     border:1px solid transparent}
+.asc:hover{border-color:var(--border);transform:translateY(-5px);
+           box-shadow:0 16px 48px rgba(219,146,0,.1)}
+.asc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;
+             background:linear-gradient(90deg,var(--gold3),var(--gold),transparent);
+             opacity:0;transition:opacity .3s}
+.asc:hover::before{opacity:1}
+.asc .bn{font-family:var(--fh);font-size:clamp(2.2rem,4vw,3rem);font-weight:700;
+         color:var(--navy);line-height:1;margin-bottom:.45rem}
+.asc .bn span{color:var(--gold)}
+.asc .de{font-size:.8rem;color:var(--muted);font-weight:500;line-height:1.45}
+.asc-icon{position:absolute;bottom:.75rem;right:1rem;opacity:.07;color:var(--gold)}
+
+/* ── VIDEO ── */
+#vid{position:relative;overflow:hidden;min-height:72vh;
+     display:flex;align-items:center;justify-content:center}
+.vbg{position:absolute;inset:0;z-index:0;
+     background:linear-gradient(-45deg,#060f1c,#112244,#061520,#1a0a22,#071a10);
+     background-size:400% 400%;animation:vshift 12s ease infinite}
+@keyframes vshift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.vgrid{position:absolute;inset:0;z-index:1;overflow:hidden;opacity:.3}
+.vgrid::before,.vgrid::after{content:'';position:absolute;
+    background:repeating-linear-gradient(0deg,transparent,transparent 60px,
+    rgba(219,146,0,.06) 60px,rgba(219,146,0,.06) 61px),
+    repeating-linear-gradient(90deg,transparent,transparent 60px,
+    rgba(219,146,0,.06) 60px,rgba(219,146,0,.06) 61px);
+    inset:0}
+.vrow{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:5rem;
+      align-items:center;padding:5.5rem 0}
+.vleft h2{color:#fff;margin-bottom:1.1rem;text-align:left}
+.vleft h2 em{font-style:italic;color:var(--gold2)}
+.vleft .lbl{justify-content:flex-start}
+.vleft p{color:rgba(255,255,255,.6);margin-bottom:2.2rem}
+.vcta{display:inline-flex;align-items:center;gap:.6rem}
+.vfgrid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+.vfc{background:rgba(255,255,255,.045);border:1px solid rgba(219,146,0,.18);
+     border-radius:18px;padding:1.8rem 1.5rem;backdrop-filter:blur(12px);
+     transition:all .35s;position:relative;overflow:hidden}
+.vfc::before{content:'';position:absolute;inset:0;border-radius:18px;
+             background:radial-gradient(circle at top left,rgba(219,146,0,.07),transparent 70%);
+             opacity:0;transition:opacity .35s}
+.vfc:hover{background:rgba(219,146,0,.07);border-color:rgba(219,146,0,.38);
+           transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.35)}
+.vfc:hover::before{opacity:1}
+.vficon{font-size:1.75rem;display:block;margin-bottom:.8rem;line-height:1}
+.vfnum{font-size:2.3rem;font-weight:700;color:var(--gold2);line-height:1;margin-bottom:.3rem;
+       font-family:var(--fb)}
+.vflabel{font-size:.78rem;color:rgba(255,255,255,.6);font-weight:500;
+         text-transform:uppercase;letter-spacing:.07em;line-height:1.3}
+@media(max-width:1024px){.vrow{gap:3rem}}
+@media(max-width:767px){
+  .vrow{grid-template-columns:1fr;gap:3rem;padding:3.5rem 0}
+  .vleft h2,.vleft .lbl{text-align:center}
+  .vleft p{text-align:center}
+  .vcta{width:100%;justify-content:center}
+}
+
+/* ── BRAND VALUES ── */
+#brandvals{background:var(--navy);padding:clamp(4rem,8vw,6.5rem) 0;position:relative;overflow:hidden}
+#brandvals::before{content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(219,146,0,.04),transparent 70%);pointer-events:none}
+.bvhdr{text-align:center;margin-bottom:3.5rem}
+.bvhdr h2{color:#fff;margin-top:.5rem}
+.bvhdr .lbl{justify-content:center}
+.bvgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.bvc{background:rgba(255,255,255,.04);border:1px solid rgba(219,146,0,.14);
+     border-radius:22px;padding:2.5rem 2rem;position:relative;overflow:hidden;transition:all .4s}
+.bvc::after{content:'';position:absolute;bottom:0;left:10%;right:10%;height:1.5px;
+            background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity .4s}
+.bvc:hover{background:rgba(255,255,255,.065);border-color:rgba(219,146,0,.3);
+           transform:translateY(-5px);box-shadow:0 18px 50px rgba(0,0,0,.4)}
+.bvc:hover::after{opacity:1}
+.bvara{font-size:3rem;color:rgba(219,146,0,.18);line-height:1;margin-bottom:1.2rem;
+       font-family:var(--fh);font-style:italic;letter-spacing:.1em;display:block}
+.bvc h3{color:var(--gold2);margin-bottom:.85rem;font-size:clamp(1.1rem,2vw,1.35rem)}
+.bvc p{color:rgba(255,255,255,.58);font-size:.9rem;line-height:1.8}
+@media(max-width:767px){.bvgrid{grid-template-columns:1fr;gap:1rem}}
+
+/* ── FOOTER BRAND ── */
+.flogo{display:flex;align-items:center;gap:.9rem;margin-bottom:1.3rem}
+.flogo img{height:40px;display:block;filter:drop-shadow(0 0 8px rgba(219,146,0,.3));flex-shrink:0}
+.fbrand{display:flex;flex-direction:column;line-height:1}
+.fbname{font-family:var(--fh);font-size:1.05rem;font-weight:600;color:#fff;margin-bottom:.28rem}
+.fbara{font-size:.72rem;color:rgba(219,146,0,.5);letter-spacing:.06em;font-style:italic;font-family:var(--fh)}
+
+/* ── HOTELS ── */
+#hotels{background:var(--off)}
+.sh{text-align:center;margin-bottom:4rem}
+.sh h2{color:var(--navy);margin-bottom:.75rem}
+.sh p{color:var(--muted);max-width:460px;margin:0 auto}
+.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.hc{border-radius:16px;overflow:hidden;background:var(--white);cursor:pointer;
+    box-shadow:0 4px 24px rgba(0,0,0,.07);
+    transition:box-shadow .3s;transform-style:preserve-3d;
+    will-change:transform;position:relative;cursor:default}
+.hc:hover{box-shadow:0 20px 60px rgba(0,0,0,.16)}
+.hthumb{height:190px;position:relative;overflow:hidden;
+        display:flex;align-items:center;justify-content:center}
+.tm{background:linear-gradient(140deg,#0a1e38,#162e58 45%,#1e4580)}
+.td{background:linear-gradient(140deg,#071a0f,#122a1c 45%,#1a4a2e)}
+.hthumb-overlay{position:absolute;inset:0;
+    background:linear-gradient(to top,rgba(0,0,0,.55) 0%,transparent 65%)}
+.hthumb-icon{opacity:.12;position:relative;z-index:0}
+.hb{position:absolute;top:14px;right:14px;font-size:.63rem;font-weight:700;
+    letter-spacing:.1em;text-transform:uppercase;padding:.35rem .85rem;
+    border-radius:100px;color:#fff;backdrop-filter:blur(8px)}
+.bm{background:rgba(219,146,0,.82)}
+.bd{background:rgba(45,122,79,.82)}
+/* Shine sweep */
+.hc::after{content:'';position:absolute;top:0;left:-100%;width:55%;height:100%;
+           background:linear-gradient(90deg,transparent,rgba(255,255,255,.07),transparent);
+           transition:left .65s ease;pointer-events:none}
+.hc:hover::after{left:150%}
+.hbody{padding:1.5rem}
+.hstars{color:var(--gold);font-size:.82rem;margin-bottom:.5rem;letter-spacing:.06em}
+.hname{font-family:var(--fh);font-size:1.22rem;font-weight:600;
+       color:var(--navy);margin-bottom:.55rem;line-height:1.3}
+.hdist{display:flex;align-items:center;gap:.4rem;font-size:.78rem;color:var(--muted)}
+.hdist svg{color:var(--gold);flex-shrink:0}
+
+/* ── SERVICES ── */
+#srv{background:var(--white)}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.sc{padding:2rem 1.5rem 2.5rem;border-radius:16px;
+    border:1px solid var(--border);position:relative;overflow:hidden;
+    transition:all .35s;background:var(--white)}
+.sc:hover{border-color:var(--gold);
+          box-shadow:0 8px 44px rgba(219,146,0,.11);transform:translateY(-5px)}
+.scnum{position:absolute;top:.5rem;right:.9rem;font-family:var(--fh);font-size:5rem;
+       font-weight:700;color:var(--gold);opacity:.06;line-height:1;pointer-events:none}
+.sico{width:54px;height:54px;background:rgba(219,146,0,.09);border-radius:13px;
+      display:flex;align-items:center;justify-content:center;
+      margin-bottom:1.5rem;color:var(--gold);transition:background .3s}
+.sc:hover .sico{background:rgba(219,146,0,.18)}
+.sc h3{color:var(--navy);margin-bottom:.65rem;font-size:1.08rem}
+.sc p{font-size:.845rem;color:var(--text);line-height:1.72}
+/* Bottom gold line */
+.sc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+           background:linear-gradient(90deg,transparent,var(--gold),transparent);
+           transform:scaleX(0);transform-origin:center;transition:transform .45s ease}
+.sc:hover::after{transform:scaleX(1)}
+
+/* ── HOW IT WORKS ── */
+#how{background:var(--navy);position:relative;overflow:hidden}
+/* Hex grid bg */
+#how::before{content:'';position:absolute;inset:0;opacity:1;
+  background:url("data:image/svg+xml,%3Csvg width='56' height='100' viewBox='0 0 56 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34L28 66zM28 100L0 84V50l28 16 28-16v34L28 100z' fill='none' stroke='%23c9a84c' stroke-width='.5' opacity='.06'/%3E%3C/svg%3E") repeat;
+  pointer-events:none}
+.hsteps{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;position:relative}
+.hsteps::before{content:'';position:absolute;top:2.5rem;left:13%;right:13%;height:1px;
+                background:linear-gradient(90deg,transparent,rgba(219,146,0,.5),transparent)}
+.step{text-align:center;padding:0 1.5rem;position:relative}
+.snum-bg{font-family:var(--fh);font-size:7rem;font-weight:700;
+         color:rgba(219,146,0,.04);line-height:1;
+         position:absolute;top:-1.5rem;left:50%;transform:translateX(-50%);
+         pointer-events:none;white-space:nowrap}
+.scirc{width:52px;height:52px;border-radius:50%;position:relative;z-index:1;
+       background:linear-gradient(135deg,var(--gold3),var(--gold));
+       display:flex;align-items:center;justify-content:center;
+       margin:0 auto 1.75rem;
+       box-shadow:0 0 0 8px rgba(219,146,0,.08),0 4px 28px rgba(219,146,0,.3)}
+.scirc span{font-family:var(--fh);font-size:1.35rem;font-weight:700;color:var(--navy)}
+.step h3{color:#fff;font-size:1.05rem;margin-bottom:.65rem}
+.step p{font-size:.82rem;color:rgba(255,255,255,.42);line-height:1.75}
+
+/* ── TESTIMONIALS ── */
+#testi{background:var(--white);position:relative;overflow:hidden}
+#testi::before{content:'';position:absolute;left:-300px;bottom:-200px;
+               width:600px;height:600px;border-radius:50%;
+               background:radial-gradient(circle,rgba(219,146,0,.03) 0%,transparent 65%);
+               pointer-events:none}
+.partners{display:flex;gap:1.25rem;flex-wrap:wrap;justify-content:center;margin-bottom:4.5rem}
+.pchip{padding:.65rem 1.75rem;border-radius:8px;background:var(--off);
+       border:1px solid var(--border);font-family:var(--fh);font-size:.9rem;
+       font-weight:600;color:var(--muted);letter-spacing:.04em;transition:all .25s;cursor:pointer}
+.pchip:hover{border-color:var(--gold);color:var(--gold3);
+             box-shadow:0 4px 20px rgba(219,146,0,.1)}
+.pchip.active{border-color:var(--gold);color:var(--gold3);background:#fff5e0;
+              box-shadow:0 4px 20px rgba(219,146,0,.15)}
+.carousel{position:relative;max-width:820px;margin:0 auto}
+.cslide{display:none;animation:cfd .5s ease}
+.cslide.on{display:block}
+@keyframes cfd{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.tcard{background:var(--off);border-radius:18px;padding:3rem 3.5rem;
+       border-left:3px solid var(--gold);position:relative;overflow:hidden}
+.tcard::before{content:open-quote;font-family:var(--fh);font-size:9rem;
+               color:var(--gold);opacity:.12;line-height:.7;
+               position:absolute;top:1.5rem;left:2rem;pointer-events:none}
+/* Diagonal accent */
+.tcard::after{content:'';position:absolute;bottom:0;right:0;
+              width:150px;height:150px;border-radius:50%;
+              background:radial-gradient(circle,rgba(219,146,0,.07),transparent)}
+.tstars{color:var(--gold);font-size:.9rem;letter-spacing:.1em;margin-bottom:1.1rem}
+.tq{font-family:var(--fh);font-size:1.22rem;line-height:1.88;font-style:italic;
+    color:#2d3748;margin-bottom:1.5rem;position:relative;z-index:1}
+.tau{font-size:.875rem;font-weight:600;color:var(--navy)}
+.tro{font-size:.78rem;color:var(--muted);margin-top:.2rem}
+.cnav{display:flex;align-items:center;justify-content:center;gap:1.5rem;margin-top:2rem}
+.cn{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--border);
+    background:none;cursor:pointer;display:flex;align-items:center;justify-content:center;
+    color:var(--gold);transition:all .25s}
+.cn:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.cdots{display:flex;gap:.5rem;align-items:center}
+.cd{width:6px;height:6px;border-radius:3px;background:var(--border);
+    transition:all .35s;cursor:pointer}
+.cd.on{background:var(--gold);width:22px}
+
+/* ── CONTACT ── */
+#contact{background:linear-gradient(135deg,#9a7030 0%,var(--gold) 50%,#d4a84c 100%)}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem;align-items:start}
+.cleft h2{color:var(--navy);margin-bottom:1rem}
+.cleft p{color:rgba(8,17,30,.68);margin-bottom:2rem;max-width:380px}
+.wa{display:inline-flex;align-items:center;gap:.7rem;background:var(--navy);
+    color:#fff;padding:.95rem 1.8rem;border-radius:8px;font-weight:600;
+    font-size:.87rem;letter-spacing:.03em;transition:all .3s;
+    box-shadow:0 4px 24px rgba(8,17,30,.25)}
+.wa:hover{background:var(--navy2);transform:translateY(-2px);
+          box-shadow:0 8px 36px rgba(8,17,30,.35)}
+.cform{background:var(--white);border-radius:20px;padding:2.75rem;
+       box-shadow:0 24px 80px rgba(0,0,0,.18)}
+.fr{margin-bottom:1.3rem}
+.fr label{display:block;font-size:.77rem;font-weight:600;color:var(--navy);
+          margin-bottom:.45rem;letter-spacing:.04em}
+.fr input{width:100%;padding:.87rem 1.05rem;border:1.5px solid rgba(0,0,0,.09);
+          border-radius:9px;font-family:var(--fb);font-size:.88rem;
+          color:var(--navy);outline:none;transition:all .25s;background:#fafafa}
+.fr input:focus{border-color:var(--gold);background:#fff;
+                box-shadow:0 0 0 3px rgba(219,146,0,.08)}
+.fsub{width:100%;background:linear-gradient(135deg,var(--navy2),var(--navy));
+      color:#fff;padding:.97rem;border:none;border-radius:9px;
+      font-family:var(--fb);font-size:.92rem;font-weight:600;cursor:pointer;
+      letter-spacing:.04em;margin-top:.5rem;transition:all .25s;
+      box-shadow:0 4px 20px rgba(8,17,30,.2)}
+.fsub:hover{transform:translateY(-1px);box-shadow:0 8px 32px rgba(8,17,30,.3)}
+.fok{display:none;text-align:center;padding:2rem 1rem}
+.fok svg{color:var(--gold);margin-bottom:1rem}
+.fok h3{color:var(--navy);margin-bottom:.5rem;font-size:1.4rem}
+.fok p{color:var(--muted);font-size:.875rem}
+
+/* ── FOOTER ── */
+#footer{background:var(--navy);padding:4.5rem 0 2.25rem}
+.fgrid{display:grid;grid-template-columns:2fr 1.5fr 1.5fr 1.2fr;gap:3rem;
+       padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:2rem}
+/* .flogo img handled in FOOTER BRAND block above */
+.fdesc{font-size:.81rem;color:rgba(255,255,255,.75);line-height:1.78}
+.fcol h4{font-family:var(--fb);font-size:.68rem;font-weight:600;
+         letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:1.1rem}
+.fcol ul{list-style:none}
+.fcol ul li{margin-bottom:.55rem}
+.fcol ul li a{font-size:.81rem;color:rgba(255,255,255,.80);transition:color .2s}
+.fcol ul li a:hover{color:var(--gold)}
+.fci{display:flex;align-items:flex-start;gap:.65rem;margin-bottom:.8rem;
+     font-size:.81rem;color:rgba(255,255,255,.4)}
+.fci svg{flex-shrink:0;margin-top:1px;color:var(--gold)}
+.fbot{text-align:center;font-size:.74rem;color:rgba(255,255,255,.55)}
+
+/* ── LEGAL MODALS ── */
+.lmodal-overlay{position:fixed;inset:0;background:rgba(5,9,18,.82);z-index:2000;
+  display:flex;align-items:flex-start;justify-content:center;padding:3rem 1rem;
+  overflow-y:auto;opacity:0;pointer-events:none;transition:opacity .3s}
+.lmodal-overlay.open{opacity:1;pointer-events:all}
+.lmodal{background:var(--white);border-radius:20px;max-width:760px;width:100%;
+  box-shadow:0 32px 80px rgba(0,0,0,.35);overflow:hidden;
+  transform:translateY(24px);transition:transform .35s}
+.lmodal-overlay.open .lmodal{transform:translateY(0)}
+.lmodal-head{background:var(--navy);padding:2.2rem 2.5rem 1.8rem;position:relative}
+.lmodal-head h2{color:#fff;font-size:clamp(1.3rem,3vw,1.8rem);margin:0 2rem 0 0}
+.lmodal-head .lm-sub{font-size:.76rem;color:rgba(255,255,255,.45);
+  letter-spacing:.12em;text-transform:uppercase;margin-top:.5rem;font-family:var(--fb)}
+.lmodal-close{position:absolute;top:1.4rem;right:1.4rem;width:36px;height:36px;
+  border-radius:50%;border:1px solid rgba(255,255,255,.2);background:transparent;
+  color:rgba(255,255,255,.6);cursor:pointer;font-size:1.2rem;line-height:36px;
+  text-align:center;transition:all .2s;display:flex;align-items:center;justify-content:center}
+.lmodal-close:hover{background:rgba(255,255,255,.1);color:#fff}
+.lmodal-body{padding:2.5rem;overflow-y:auto;max-height:72vh}
+.lmodal-body h3{font-family:var(--fh);font-size:1.1rem;color:var(--navy);
+  margin:1.8rem 0 .6rem;padding-left:.85rem;border-left:3px solid var(--gold)}
+.lmodal-body h3:first-child{margin-top:0}
+.lmodal-body p{font-size:.875rem;color:var(--text);line-height:1.82;margin-bottom:.9rem}
+.lmodal-body ul{padding-left:1.2rem;margin-bottom:.9rem}
+.lmodal-body ul li{font-size:.875rem;color:var(--text);line-height:1.78;margin-bottom:.35rem}
+.lmodal-foot{padding:1.2rem 2.5rem;background:var(--off);border-top:1px solid rgba(201,168,76,.12);
+  font-size:.76rem;color:var(--muted);text-align:center}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  #h3c{width:42vw;height:50vh;right:-3%}
+  .awrap{grid-template-columns:1fr;gap:2.5rem}
+  .hgrid{grid-template-columns:repeat(2,1fr)}
+  .sgrid{grid-template-columns:repeat(2,1fr)}
+  .fgrid{grid-template-columns:1fr 1fr;gap:2rem}
+  .hsteps::before{display:none}
+  .bvgrid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:767px){
+  .nlinks,.hbg~.nright>.lpill{display:none}
+  .hbg{display:flex}
+  #h3c{width:100%;height:100%}
+  .hrow{flex-direction:column;padding:6rem 0 2.5rem;min-height:auto}
+  .hleft,.hright{max-width:100%;width:100%}
+  .hright{height:300px}
+  .hcont{width:100%;padding:0}
+  .hbtns>*{width:100%;justify-content:center}
+  .hstats{gap:1.5rem}
+  .aright{grid-template-columns:1fr 1fr}
+  .hgrid{grid-template-columns:1fr}
+  .sgrid{grid-template-columns:1fr}
+  .hsteps{grid-template-columns:1fr;gap:2.5rem}
+  .step{display:flex;gap:1.5rem;text-align:left;align-items:flex-start}
+  .scirc{flex-shrink:0;margin:0}
+  .snum-bg{display:none}
+  .cgrid{grid-template-columns:1fr;gap:2rem}
+  .fgrid{grid-template-columns:1fr;text-align:center}
+  .fci{justify-content:center}
+  .tcard{padding:2rem 1.5rem}
+  .tcard::before{left:.75rem;font-size:7rem}
+  .partners{gap:.75rem}
+  /* legal modals */
+  .lmodal-overlay{padding:1.5rem 1rem}
+  .lmodal-head{padding:1.8rem 1.8rem 1.4rem}
+  .lmodal-body{padding:1.8rem;max-height:60vh}
+  .lmodal-foot{padding:1rem 1.8rem}
+  /* experience stat grid: keep 2-col but shrink padding */
+  .vfc{padding:1.4rem 1.1rem}
+  .vfnum{font-size:1.9rem}
+}
+
+/* ── HOTEL MODAL ── */
+#hmodal{display:none;position:fixed;inset:0;z-index:950;
+  background:rgba(4,10,20,.82);backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);align-items:center;justify-content:center;padding:1.25rem}
+#hmodal.open{display:flex}
+.hminner{background:#fff;border-radius:20px;width:100%;max-width:680px;
+  max-height:90vh;overflow-y:auto;box-shadow:0 32px 80px rgba(0,0,0,.45);
+  animation:hmIn .35s cubic-bezier(.34,1.56,.64,1)}
+@keyframes hmIn{from{opacity:0;transform:scale(.88) translateY(24px)}to{opacity:1;transform:none}}
+.hmhead{position:relative;padding:2.5rem 2rem 1.8rem;border-radius:20px 20px 0 0;overflow:hidden}
+.hmhead.makkah{background:linear-gradient(140deg,#0a1e38,#162e58 50%,#1a3a70)}
+.hmhead.madinah{background:linear-gradient(140deg,#071a0f,#122a1c 50%,#1a4a2e)}
+.hmhead-bg{position:absolute;inset:0;opacity:.06;
+  background-image:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);
+  background-size:18px 18px}
+.hmhead-content{position:relative;z-index:1}
+.hmbadge{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;padding:4px 14px;border-radius:100px;margin-bottom:.9rem}
+.hmbadge.makkah{background:rgba(219,146,0,.85);color:#fff}
+.hmbadge.madinah{background:rgba(45,122,79,.85);color:#fff}
+.hmhead h2{font-family:var(--fh);font-size:clamp(1.4rem,3vw,1.9rem);color:#fff;
+  font-weight:700;margin:0 0 .5rem;line-height:1.2}
+.hmstars{color:#c9a84c;font-size:.88rem;letter-spacing:.06em;margin-bottom:.6rem}
+.hmdistrow{display:flex;align-items:center;gap:.4rem;color:rgba(255,255,255,.65);font-size:.83rem}
+.hmclose{position:absolute;top:1.1rem;right:1.1rem;background:rgba(255,255,255,.12);
+  border:none;color:#fff;width:34px;height:34px;border-radius:50%;cursor:pointer;
+  font-size:1.2rem;display:flex;align-items:center;justify-content:center;
+  transition:background .2s;z-index:2;font-family:var(--fb)}
+.hmclose:hover{background:rgba(255,255,255,.25)}
+.hmbody{padding:1.8rem 2rem 2rem}
+.hmdesc{color:var(--muted);line-height:1.75;font-size:.9rem;margin-bottom:1.6rem}
+.hmsect{margin-bottom:1.5rem}
+.hmsect-title{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:.85rem;display:flex;align-items:center;gap:.5rem}
+.hmsect-title::after{content:'';flex:1;height:1px;background:rgba(0,0,0,.08)}
+.hmrooms{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}
+.hmroom{border:1.5px solid rgba(0,0,0,.07);border-radius:12px;padding:.9rem 1rem;
+  transition:border-color .2s,box-shadow .2s}
+.hmroom:hover{border-color:var(--gold);box-shadow:0 4px 16px rgba(210,140,0,.1)}
+.hmroom-type{font-size:.78rem;font-weight:600;color:var(--navy);margin-bottom:.25rem}
+.hmroom-cap{font-size:.75rem;color:var(--muted);display:flex;align-items:center;gap:.3rem}
+.hmfacs{display:flex;flex-wrap:wrap;gap:.5rem}
+.hmfac{background:var(--off);border-radius:8px;padding:5px 12px;
+  font-size:.76rem;color:var(--navy);font-weight:500;
+  display:flex;align-items:center;gap:.35rem}
+.hmcta{margin-top:1.8rem;display:flex;gap:.75rem;flex-wrap:wrap}
+.hmcta-wa{display:inline-flex;align-items:center;gap:.6rem;
+  background:linear-gradient(135deg,#25d366,#1da851);color:#fff;
+  padding:.75rem 1.4rem;border-radius:100px;font-weight:600;font-size:.85rem;
+  border:none;cursor:pointer;transition:transform .2s,box-shadow .2s;text-decoration:none}
+.hmcta-wa:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.35)}
+.hmcta-info{display:inline-flex;align-items:center;gap:.5rem;
+  background:var(--off);color:var(--navy);
+  padding:.75rem 1.4rem;border-radius:100px;font-weight:600;font-size:.85rem;
+  border:none;cursor:pointer;transition:background .2s;text-decoration:none}
+.hmcta-info:hover{background:#ece6d9}
+@media(max-width:520px){
+  .hmrooms{grid-template-columns:1fr}
+  .hmbody{padding:1.4rem 1.2rem 1.6rem}
+  .hmhead{padding:2rem 1.2rem 1.4rem}
+  .hmcta{flex-direction:column}
+  .hmcta a{justify-content:center}
+  /* legal modal: bottom-sheet on small phones */
+  .lmodal-overlay{padding:0;align-items:flex-end}
+  .lmodal{border-radius:20px 20px 0 0;max-width:100%}
+  .lmodal-head{padding:1.4rem 1.2rem 1rem}
+  .lmodal-body{padding:1.2rem 1.2rem 1.5rem;max-height:68vh}
+  .lmodal-foot{padding:.85rem 1.2rem}
+  /* about: collapse stat cards to single column */
+  .aright{grid-template-columns:1fr}
+  /* hero stats: wrap and tighten on very small phones */
+  .hstats{flex-wrap:wrap;gap:.85rem}
+  .hsi .sn{font-size:1.8rem}
+  /* hero canvas height on tiny screens */
+  .hright{height:220px}
+  /* brand values: single col already at 767px; ensure bvgrid is 1 col */
+  .bvgrid{grid-template-columns:1fr}
+}
+</style>
+</head><body>
+
+<!-- NAVBAR -->
+<header id="nav">
+<div class="container">
+  <nav class="ni">
+    <a href="#" class="nlogo"><img src="data:image/png;base64,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" alt="Safa Hotel Network"><div class="nbrand"><span class="nbname">Safa Hotel Network</span><span class="nbtag" data-id="Mitra Hotel Umroh" data-en="Umrah Hotel Partner">Mitra Hotel Umroh</span></div></a>
+    <ul class="nlinks">
+      <li><a href="#about" data-id="Tentang Kami" data-en="About">Tentang Kami</a></li>
+      <li><a href="#hotels" data-id="Hotel" data-en="Hotels">Hotel</a></li>
+      <li><a href="#srv" data-id="Layanan" data-en="Services">Layanan</a></li>
+      <li><a href="#how" data-id="Cara Kerja" data-en="How It Works">Cara Kerja</a></li>
+      <li><a href="#testi" data-id="Mitra" data-en="Partners">Mitra</a></li>
+      <li><a href="#contact" data-id="Kontak" data-en="Contact">Kontak</a></li>
+    </ul>
+    <div class="nright">
+      <div class="lpill">
+        <button class="lbtn on" onclick="setLang('id')">ID</button>
+        <button class="lbtn" onclick="setLang('en')">EN</button>
+      </div>
+      <button class="hbg" id="hbg" onclick="toggleM()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</div>
+<div class="mnav" id="mnav">
+  <a href="#about" onclick="closeM()" data-id="Tentang Kami" data-en="About">Tentang Kami</a>
+  <a href="#hotels" onclick="closeM()" data-id="Hotel" data-en="Hotels">Hotel</a>
+  <a href="#srv" onclick="closeM()" data-id="Layanan" data-en="Services">Layanan</a>
+  <a href="#how" onclick="closeM()" data-id="Cara Kerja" data-en="How It Works">Cara Kerja</a>
+  <a href="#testi" onclick="closeM()" data-id="Mitra" data-en="Partners">Mitra</a>
+  <a href="#contact" onclick="closeM()" data-id="Kontak" data-en="Contact">Kontak</a>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="ptx"></canvas>
+  <div style="position:absolute;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(ellipse 70% 60% at 30% 45%,rgba(22,50,90,.55) 0%,transparent 70%),
+               radial-gradient(ellipse 50% 40% at 70% 55%,rgba(210,140,0,.06) 0%,transparent 60%)">
+  </div>
+  <div class="container">
+    <div class="hrow">
+      <div class="hleft hcont">
+      <div class="heyebrow">
+        <span data-id="Mitra Hotel Resmi B2B" data-en="Official B2B Hotel Partner">Mitra Hotel Resmi B2B</span>
+      </div>
+      <h1 class="hh1">
+        <span class="ln"><span data-id="Mitra Hotel" data-en="Trusted Hotel">Mitra Hotel</span></span>
+        <span class="ln"><span class="gt" data-id="Terpercaya" data-en="Partner">Terpercaya</span></span>
+        <span class="ln"><span data-id="untuk Agen Umroh" data-en="for Umrah Agencies">untuk Agen Umroh</span></span>
+      </h1>
+      <p class="hsub" data-id="Kami menghubungkan agen travel umroh Indonesia dengan hotel-hotel bintang pilihan di Makkah dan Madinah — harga khusus B2B, konfirmasi instan, dan tim dedicated setiap musim." data-en="We connect Indonesian umrah travel agencies with select hotels in Makkah and Madinah — exclusive B2B rates, instant confirmation, and a dedicated team every season.">
+        Kami menghubungkan agen travel umroh Indonesia dengan hotel-hotel bintang pilihan di Makkah dan Madinah — harga khusus B2B, konfirmasi instan, dan tim dedicated setiap musim.
+      </p>
+      <div class="hbtns">
+        <a href="#contact" class="bg">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span data-id="Daftar Mitra" data-en="Become a Partner">Daftar Mitra</span>
+        </a>
+        <a href="#hotels" class="bgl">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+          <span data-id="Lihat Hotel" data-en="View Hotels">Lihat Hotel</span>
+        </a>
+      </div>
+      <div class="hstats">
+        <div class="hsi"><div class="sn" data-target="50">0</div><div class="sl" data-id="Hotel Mitra" data-en="Partner Hotels">Hotel Mitra</div></div>
+        <div class="hsi"><div class="sn" data-target="200">0</div><div class="sl" data-id="Agen Aktif" data-en="Active Agencies">Agen Aktif</div></div>
+        <div class="hsi"><div class="sn" data-target="10">0</div><div class="sl" data-id="Tahun Pengalaman" data-en="Years Experience">Tahun Pengalaman</div></div>
+        <div class="hsi"><div class="sn" data-target="15000">0</div><div class="sl" data-id="Jamaah Dilayani" data-en="Pilgrims Served">Jamaah Dilayani</div></div>
+      </div>
+      </div>
+      <div class="hright">
+        <canvas id="h3c"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="mwrap" aria-hidden="true">
+  <div class="mtrack">
+    <span class="mit">Swissôtel Makkah<span class="mdot"></span></span>
+    <span class="mit">Pullman ZamZam<span class="mdot"></span></span>
+    <span class="mit">Marriott Madinah<span class="mdot"></span></span>
+    <span class="mit">Hilton Suites Makkah<span class="mdot"></span></span>
+    <span class="mit">Anwar Al Madinah<span class="mdot"></span></span>
+    <span class="mit">Conrad Makkah<span class="mdot"></span></span>
+    <span class="mit">InterContinental<span class="mdot"></span></span>
+    <span class="mit">Mövenpick Madinah<span class="mdot"></span></span>
+    <span class="mit">Swissôtel Makkah<span class="mdot"></span></span>
+    <span class="mit">Pullman ZamZam<span class="mdot"></span></span>
+    <span class="mit">Marriott Madinah<span class="mdot"></span></span>
+    <span class="mit">Hilton Suites Makkah<span class="mdot"></span></span>
+    <span class="mit">Anwar Al Madinah<span class="mdot"></span></span>
+    <span class="mit">Conrad Makkah<span class="mdot"></span></span>
+    <span class="mit">InterContinental<span class="mdot"></span></span>
+    <span class="mit">Mövenpick Madinah<span class="mdot"></span></span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+<div class="container">
+  <div class="awrap">
+    <div class="aleft" data-r="left">
+      <div class="abignum">01</div>
+      <span class="lbl" data-id="Tentang Kami" data-en="About Us">Tentang Kami</span>
+      <h2 data-id="Jembatan antara Hotel Saudi Arabia dan Agen Umroh Indonesia" data-en="Bridging Saudi Hotels and Indonesian Umrah Agencies">Jembatan antara Hotel Saudi Arabia dan Agen Umroh Indonesia</h2>
+      <p data-id="Safa Hotel Network berdiri dengan satu misi: membuat akses hotel terbaik di Tanah Suci menjadi mudah, andal, dan menguntungkan bagi agen travel umroh Indonesia." data-en="Safa Hotel Network was founded with one mission: make access to the Holy Land's finest hotels easy, reliable, and profitable for Indonesian umrah agencies.">Safa Hotel Network berdiri dengan satu misi: membuat akses hotel terbaik di Tanah Suci menjadi mudah, andal, dan menguntungkan bagi agen travel umroh Indonesia.</p>
+      <p data-id="Dengan jaringan 50+ hotel mitra di Makkah dan Madinah, kami menawarkan harga B2B kompetitif, sistem pemesanan terpusat, dan dukungan operasional yang agen butuhkan — terutama saat musim puncak." data-en="With 50+ partner hotels in Makkah and Madinah, we offer competitive B2B rates, a centralized booking system, and the operational support agencies need — especially during peak season.">Dengan jaringan 50+ hotel mitra di Makkah dan Madinah, kami menawarkan harga B2B kompetitif, sistem pemesanan terpusat, dan dukungan operasional yang agen butuhkan — terutama saat musim puncak.</p>
+    </div>
+    <div class="aright" data-r="right">
+      <div class="asc">
+        <div class="bn counter" data-target="50">0<span>+</span></div>
+        <div class="de" data-id="Hotel mitra di Makkah dan Madinah" data-en="Partner hotels in Makkah & Madinah">Hotel mitra di Makkah dan Madinah</div>
+        <div class="asc-icon"><svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+      </div>
+      <div class="asc">
+        <div class="bn counter" data-target="200">0<span>+</span></div>
+        <div class="de" data-id="Agen travel aktif di seluruh Indonesia" data-en="Active travel agencies across Indonesia">Agen travel aktif di seluruh Indonesia</div>
+        <div class="asc-icon"><svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      </div>
+      <div class="asc">
+        <div class="bn counter" data-target="10">0<span>+</span></div>
+        <div class="de" data-id="Tahun pengalaman industri umroh" data-en="Years in the umrah industry">Tahun pengalaman industri umroh</div>
+        <div class="asc-icon"><svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+      </div>
+      <div class="asc">
+        <div class="bn counter" data-target="15">0<span>K+</span></div>
+        <div class="de" data-id="Jamaah yang telah diakomodasi" data-en="Pilgrims accommodated">Jamaah yang telah diakomodasi</div>
+        <div class="asc-icon"><svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- BRAND VALUES -->
+<section id="brandvals">
+  <div class="container">
+    <div class="bvhdr" data-r="up">
+      <span class="lbl" style="color:var(--gold)" data-id="Nilai Kami" data-en="Our Values">Nilai Kami</span>
+      <h2><em style="font-style:italic;color:var(--gold2)" data-id="Dibangun" data-en="Built">Dibangun</em> <span style="color:#fff" data-id="di Atas Tiga Fondasi" data-en="on Three Foundations">di Atas Tiga Fondasi</span></h2>
+    </div>
+    <div class="bvgrid">
+      <div class="bvc" data-r="up">
+        <span class="bvara" aria-hidden="true">أمانة</span>
+        <h3 data-id="Amanah" data-en="Trust">Amanah</h3>
+        <p data-id="Setiap komitmen yang kami buat adalah janji yang kami tepati. Transparansi harga, ketepatan informasi, dan integritas dalam setiap transaksi menjadi standar kami." data-en="Every commitment we make is a promise we keep. Transparent pricing, accurate information, and integrity in every transaction are our standard.">Setiap komitmen yang kami buat adalah janji yang kami tepati. Transparansi harga, ketepatan informasi, dan integritas dalam setiap transaksi menjadi standar kami.</p>
+      </div>
+      <div class="bvc" data-r="up" style="--d:.1s">
+        <span class="bvara" aria-hidden="true">خدمة</span>
+        <h3 data-id="Khidmah" data-en="Service">Khidmah</h3>
+        <p data-id="Melayani jamaah adalah ibadah. Setiap hotel yang kami rekomendasikan dipilih berdasarkan jarak ke Masjidil Haram, kenyamanan, dan standar yang jamaah layak dapatkan." data-en="Serving pilgrims is an act of worship. Every hotel we recommend is selected based on proximity to Masjidil Haram, comfort, and the standards pilgrims deserve.">Melayani jamaah adalah ibadah. Setiap hotel yang kami rekomendasikan dipilih berdasarkan jarak ke Masjidil Haram, kenyamanan, dan standar yang jamaah layak dapatkan.</p>
+      </div>
+      <div class="bvc" data-r="up" style="--d:.2s">
+        <span class="bvara" aria-hidden="true">شراكة</span>
+        <h3 data-id="Syarikah" data-en="Partnership">Syarikah</h3>
+        <p data-id="Kami tidak hanya menyediakan kamar hotel. Kami membangun kemitraan jangka panjang yang tumbuh bersama agen travel dan memperkuat industri umroh Indonesia." data-en="We don't just provide rooms. We build long-term partnerships that grow with travel agencies and strengthen Indonesia's umrah industry.">Kami tidak hanya menyediakan kamar hotel. Kami membangun kemitraan jangka panjang yang tumbuh bersama agen travel dan memperkuat industri umroh Indonesia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="vid">
+  <div class="vbg"></div>
+  <div class="vgrid"></div>
+  <div class="container">
+    <div class="vrow">
+      <div class="vleft" data-r="left">
+        <span class="lbl" style="color:var(--gold)" data-id="Safa Hotel Network" data-en="Safa Hotel Network">Safa Hotel Network</span>
+        <h2><em data-id="Merasakan Tanah Suci," data-en="Experience the Holy Land,">Merasakan Tanah Suci,</em><br><span style="color:#fff" data-id="Dimulai dari Pilihan Hotel Tepat" data-en="Starting with the Right Hotel">Dimulai dari Pilihan Hotel Tepat</span></h2>
+        <p data-id="Setiap jamaah berhak menginap di hotel yang nyaman, dekat, dan sesuai anggaran. Kami membantu agen mewujudkan itu." data-en="Every pilgrim deserves a comfortable, well-located hotel that fits their budget. We help agencies make that happen.">Setiap jamaah berhak menginap di hotel yang nyaman, dekat, dan sesuai anggaran. Kami membantu agen mewujudkan itu.</p>
+        <a href="https://wa.me/6281234567890" class="btn vcta" target="_blank" rel="noopener">
+          <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span data-id="Konsultasi Sekarang" data-en="Consult Now">Konsultasi Sekarang</span>
+        </a>
+      </div>
+      <div class="vright" data-r="right">
+        <div class="vfgrid">
+          <div class="vfc" data-r="up">
+            <span class="vficon">🕌</span>
+            <div class="vfnum">6</div>
+            <div class="vflabel" data-id="Hotel Premium" data-en="Premium Hotels">Hotel Premium</div>
+          </div>
+          <div class="vfc" data-r="up" style="--d:.08s">
+            <span class="vficon">📍</span>
+            <div class="vfnum">50m</div>
+            <div class="vflabel" data-id="Terdekat ke Masjidil Haram" data-en="Closest to Masjidil Haram">Terdekat ke Masjidil Haram</div>
+          </div>
+          <div class="vfc" data-r="up" style="--d:.16s">
+            <span class="vficon">🤝</span>
+            <div class="vfnum">100+</div>
+            <div class="vflabel" data-id="Agen Mitra Aktif" data-en="Active Agent Partners">Agen Mitra Aktif</div>
+          </div>
+          <div class="vfc" data-r="up" style="--d:.24s">
+            <span class="vficon">⭐</span>
+            <div class="vfnum">5★</div>
+            <div class="vflabel" data-id="Standar Bintang Hotel" data-en="Hotel Star Standard">Standar Bintang Hotel</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOTELS -->
+<section id="hotels" class="section">
+<div class="container">
+  <div class="sh" data-r="up">
+    <span class="lbl" data-id="Portofolio Hotel" data-en="Hotel Portfolio">Portofolio Hotel</span>
+    <h2 data-id="Hotel Mitra Kami" data-en="Our Partner Hotels">Hotel Mitra Kami</h2>
+    <p data-id="Jaringan hotel premium di Makkah dan Madinah, dipilih berdasarkan jarak, kualitas layanan, dan kesesuaian untuk jamaah umroh." data-en="Premium hotel network in Makkah and Madinah, selected based on proximity, service quality, and suitability for umrah pilgrims.">Jaringan hotel premium di Makkah dan Madinah, dipilih berdasarkan jarak, kualitas layanan, dan kesesuaian untuk jamaah umroh.</p>
+  </div>
+  <div class="hgrid">
+    <div class="hc" data-r="up" data-tilt data-hotel="0">
+      <div class="hthumb tm"><div class="hthumb-overlay"></div><span class="hb bm">Makkah</span>
+        <svg class="hthumb-icon" width="64" height="64" fill="white" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22" fill="white"/></svg>
+      </div>
+      <div class="hbody"><div class="hstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="hname">Swissôtel Makkah</div>
+        <div class="hdist"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-id="100m dari Masjidil Haram" data-en="100m from Masjidil Haram">100m dari Masjidil Haram</span></div>
+      </div>
+    </div>
+    <div class="hc" data-r="up" data-tilt style="--d:.08s" data-hotel="1">
+      <div class="hthumb tm"><div class="hthumb-overlay"></div><span class="hb bm">Makkah</span>
+        <svg class="hthumb-icon" width="64" height="64" fill="white" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+      </div>
+      <div class="hbody"><div class="hstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="hname">Pullman ZamZam Makkah</div>
+        <div class="hdist"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-id="50m dari Masjidil Haram" data-en="50m from Masjidil Haram">50m dari Masjidil Haram</span></div>
+      </div>
+    </div>
+    <div class="hc" data-r="up" data-tilt style="--d:.16s" data-hotel="2">
+      <div class="hthumb td"><div class="hthumb-overlay"></div><span class="hb bd">Madinah</span>
+        <svg class="hthumb-icon" width="64" height="64" fill="white" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+      </div>
+      <div class="hbody"><div class="hstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="hname">Marriott Hotel Madinah</div>
+        <div class="hdist"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-id="300m dari Masjid Nabawi" data-en="300m from Masjid Nabawi">300m dari Masjid Nabawi</span></div>
+      </div>
+    </div>
+    <div class="hc" data-r="up" data-tilt data-hotel="3">
+      <div class="hthumb tm"><div class="hthumb-overlay"></div><span class="hb bm">Makkah</span>
+        <svg class="hthumb-icon" width="64" height="64" fill="white" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+      </div>
+      <div class="hbody"><div class="hstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="hname">Hilton Suites Makkah</div>
+        <div class="hdist"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-id="250m dari Masjidil Haram" data-en="250m from Masjidil Haram">250m dari Masjidil Haram</span></div>
+      </div>
+    </div>
+    <div class="hc" data-r="up" data-tilt style="--d:.08s" data-hotel="4">
+      <div class="hthumb td"><div class="hthumb-overlay"></div><span class="hb bd">Madinah</span>
+        <svg class="hthumb-icon" width="64" height="64" fill="white" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+      </div>
+      <div class="hbody"><div class="hstars">&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="hname">Anwar Al Madinah Movenpick</div>
+        <div class="hdist"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-id="150m dari Masjid Nabawi" data-en="150m from Masjid Nabawi">150m dari Masjid Nabawi</span></div>
+      </div>
+    </div>
+    <div class="hc" data-r="up" data-tilt style="--d:.16s" data-hotel="5">
+      <div class="hthumb tm"><div class="hthumb-overlay"></div><span class="hb bm">Makkah</span>
+        <svg class="hthumb-icon" width="64" height="64" fill="white" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+      </div>
+      <div class="hbody"><div class="hstars">&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="hname">Al Safwah Royale Orchid</div>
+        <div class="hdist"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-id="200m dari Masjidil Haram" data-en="200m from Masjidil Haram">200m dari Masjidil Haram</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- HOTEL MODAL -->
+<div id="hmodal" onclick="closeHotel(event)">
+  <div class="hminner" id="hminner">
+    <div class="hmhead" id="hmhead">
+      <div class="hmhead-bg"></div>
+      <div class="hmhead-content">
+        <div class="hmbadge" id="hmbadge"></div>
+        <h2 id="hmname"></h2>
+        <div class="hmstars" id="hmstars"></div>
+        <div class="hmdistrow">
+          <svg width="13" height="13" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span id="hmdist"></span>
+        </div>
+      </div>
+      <button class="hmclose" onclick="closeHotelBtn()">&times;</button>
+    </div>
+    <div class="hmbody">
+      <p class="hmdesc" id="hmdesc"></p>
+      <div class="hmsect">
+        <div class="hmsect-title" id="hmroom-title">Tipe Kamar</div>
+        <div class="hmrooms" id="hmrooms"></div>
+      </div>
+      <div class="hmsect">
+        <div class="hmsect-title" id="hmfac-title">Fasilitas Hotel</div>
+        <div class="hmfacs" id="hmfacs"></div>
+      </div>
+      <div class="hmcta">
+        <a id="hmwa" class="hmcta-wa" href="#" target="_blank" rel="noopener">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          <span id="hmwa-text">Hubungi via WhatsApp</span>
+        </a>
+        <a href="#contact" class="hmcta-info" onclick="closeHotelBtn()">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span id="hminfo-text">Minta Penawaran</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="srv" class="section">
+<div class="container">
+  <div class="sh" data-r="up">
+    <span class="lbl" data-id="Layanan Kami" data-en="Our Services">Layanan Kami</span>
+    <h2 data-id="Dirancang untuk Agen Profesional" data-en="Built for Professional Agencies">Dirancang untuk Agen Profesional</h2>
+    <p data-id="Setiap layanan kami hadir untuk mempermudah operasional agen dan meningkatkan pengalaman jamaah." data-en="Every service is designed to simplify agency operations and enhance the pilgrim experience.">Setiap layanan kami hadir untuk mempermudah operasional agen dan meningkatkan pengalaman jamaah.</p>
+  </div>
+  <div class="sgrid">
+    <div class="sc" data-r="up">
+      <span class="scnum">01</span>
+      <div class="sico"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+      <h3 data-id="Harga Khusus B2B" data-en="Exclusive B2B Rates">Harga Khusus B2B</h3>
+      <p data-id="Akses harga wholesale eksklusif yang tidak tersedia di publik. Margin kompetitif untuk setiap paket umroh Anda." data-en="Access exclusive wholesale rates unavailable to the public. Competitive margins for every umrah package.">Akses harga wholesale eksklusif yang tidak tersedia di publik. Margin kompetitif untuk setiap paket umroh Anda.</p>
+    </div>
+    <div class="sc" data-r="up" style="transition-delay:.1s">
+      <span class="scnum">02</span>
+      <div class="sico"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+      <h3 data-id="Pemesanan Terpusat" data-en="Centralized Booking">Pemesanan Terpusat</h3>
+      <p data-id="Satu platform untuk membuat, mengubah, dan mengelola semua reservasi. Konfirmasi instan dan laporan real-time." data-en="One platform to create, modify, and manage all reservations. Instant confirmation and real-time reports.">Satu platform untuk membuat, mengubah, dan mengelola semua reservasi. Konfirmasi instan dan laporan real-time.</p>
+    </div>
+    <div class="sc" data-r="up" style="transition-delay:.2s">
+      <span class="scnum">03</span>
+      <div class="sico"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+      <h3 data-id="Support Dedicated 24/7" data-en="24/7 Dedicated Support">Support Dedicated 24/7</h3>
+      <p data-id="Tim siap mendampingi sepanjang waktu saat musim umroh. Respons cepat untuk perubahan, pembatalan, dan darurat." data-en="Team available around the clock during umrah season. Fast response for changes, cancellations, and emergencies.">Tim siap mendampingi sepanjang waktu saat musim umroh. Respons cepat untuk perubahan, pembatalan, dan darurat.</p>
+    </div>
+    <div class="sc" data-r="up" style="transition-delay:.3s">
+      <span class="scnum">04</span>
+      <div class="sico"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+      <h3 data-id="Dokumen & Voucher" data-en="Documents & Vouchers">Dokumen &amp; Voucher</h3>
+      <p data-id="Semua dokumen hotel disiapkan dalam format standar industri — sesuai kebutuhan maskapai dan proses visa." data-en="All hotel documents prepared in industry-standard formats — compatible with airline and visa requirements.">Semua dokumen hotel disiapkan dalam format standar industri — sesuai kebutuhan maskapai dan proses visa.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- HOW -->
+<section id="how" class="section">
+<div class="container">
+  <div class="sh" data-r="up">
+    <span class="lbl" style="color:var(--gold);justify-content:center" data-id="Cara Kerja" data-en="How It Works">Cara Kerja</span>
+    <h2 style="color:#fff" data-id="Mulai Bermitra dalam 4 Langkah" data-en="Start Partnering in 4 Steps">Mulai Bermitra dalam 4 Langkah</h2>
+    <p style="color:rgba(255,255,255,.45)" data-id="Proses sederhana dan cepat. Tim kami mendampingi dari awal." data-en="Simple and fast process. Our team guides you from the start.">Proses sederhana dan cepat. Tim kami mendampingi dari awal.</p>
+  </div>
+  <div class="hsteps" data-r="up" style="transition-delay:.1s">
+    <div class="step"><span class="snum-bg">01</span><div class="scirc"><span>1</span></div>
+      <h3 data-id="Daftar Mitra" data-en="Register">Daftar Mitra</h3>
+      <p data-id="Isi formulir. Tim kami verifikasi dalam 1×24 jam." data-en="Fill in the form. Our team verifies within 24 hours.">Isi formulir. Tim kami verifikasi dalam 1×24 jam.</p></div>
+    <div class="step"><span class="snum-bg">02</span><div class="scirc"><span>2</span></div>
+      <h3 data-id="Akses Portofolio" data-en="Access Portfolio">Akses Portofolio</h3>
+      <p data-id="Lihat 50+ hotel dengan harga B2B real-time." data-en="Browse 50+ hotels with real-time B2B pricing.">Lihat 50+ hotel dengan harga B2B real-time.</p></div>
+    <div class="step"><span class="snum-bg">03</span><div class="scirc"><span>3</span></div>
+      <h3 data-id="Buat Pemesanan" data-en="Book Hotels">Buat Pemesanan</h3>
+      <p data-id="Pesan hotel jamaah dengan konfirmasi instan dan voucher otomatis." data-en="Book pilgrim hotels with instant confirmation and auto-vouchers.">Pesan hotel jamaah dengan konfirmasi instan dan voucher otomatis.</p></div>
+    <div class="step"><span class="snum-bg">04</span><div class="scirc"><span>4</span></div>
+      <h3 data-id="Kelola & Laporan" data-en="Manage & Report">Kelola &amp; Laporan</h3>
+      <p data-id="Monitor semua reservasi dan unduh laporan dari dashboard mitra." data-en="Monitor reservations and download reports from the partner dashboard.">Monitor semua reservasi dan unduh laporan dari dashboard mitra.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testi" class="section">
+<div class="container">
+  <div class="sh" data-r="up">
+    <span class="lbl" data-id="Mitra & Testimoni" data-en="Partners & Testimonials">Mitra &amp; Testimoni</span>
+    <h2 data-id="Dipercaya Ratusan Agen di Indonesia" data-en="Trusted by Hundreds of Agencies">Dipercaya Ratusan Agen di Indonesia</h2>
+  </div>
+  <div class="partners" data-r="up">
+    <div class="pchip active" data-slide="0">PT. Barokah Wisata</div>
+    <div class="pchip" data-slide="1">Haji &amp; Umroh Prima</div>
+    <div class="pchip" data-slide="2">Al Baitussalam Tour</div>
+    <div class="pchip" data-slide="3">Mutiara Ziarah</div>
+    <div class="pchip" data-slide="4">Arafah Wisata</div>
+    <div class="pchip" data-slide="5">Zamzam Holidays</div>
+  </div>
+  <div class="carousel" data-r="up" style="transition-delay:.1s">
+    <div class="cslide on">
+      <div class="tcard">
+        <div class="tstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="tq" data-id="Sejak bergabung dengan Safa Hotel Network, proses pemesanan hotel untuk jamaah kami jauh lebih mudah dan terstruktur. Harganya kompetitif, tim sangat responsif, dan dokumen selalu rapi." data-en="Since joining Safa Hotel Network, booking hotels for our pilgrims has been far easier and more structured. Rates are competitive, the team is highly responsive, and documents are always in order.">Sejak bergabung dengan Safa Hotel Network, proses pemesanan hotel untuk jamaah kami jauh lebih mudah dan terstruktur. Harganya kompetitif, tim sangat responsif, dan dokumen selalu rapi.</p>
+        <div class="tau">H. Ahmad Fauzi</div>
+        <div class="tro" data-id="Direktur, PT. Barokah Wisata" data-en="Director, PT. Barokah Wisata">Direktur, PT. Barokah Wisata</div>
+      </div>
+    </div>
+    <div class="cslide">
+      <div class="tcard">
+        <div class="tstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="tq" data-id="Tim Safa sangat membantu saat ada perubahan jadwal mendadak di musim umroh. Profesional, cepat tanggap, dan selalu punya solusi. Mitra yang benar-benar kami butuhkan." data-en="The Safa team was incredibly helpful when there were sudden schedule changes during umrah season. Professional, quick to respond, and always had a solution. Exactly the partner we needed.">Tim Safa sangat membantu saat ada perubahan jadwal mendadak di musim umroh. Profesional, cepat tanggap, dan selalu punya solusi. Mitra yang benar-benar kami butuhkan.</p>
+        <div class="tau">Ibu Siti Rahayu</div>
+        <div class="tro" data-id="Manajer Operasional, Haji & Umroh Prima" data-en="Operations Manager, Haji & Umroh Prima">Manajer Operasional, Haji &amp; Umroh Prima</div>
+      </div>
+    </div>
+    <div class="cslide">
+      <div class="tcard">
+        <div class="tstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="tq" data-id="Koordinasi dengan Safa sangat mudah, mulai dari penawaran harga sampai dokumen check-in semuanya tersusun rapi. Operasional agen kami jadi jauh lebih efisien di musim umroh." data-en="Coordinating with Safa is effortless — from pricing to check-in documents, everything is well organized. Our agency operations became far more efficient during umrah season.">Koordinasi dengan Safa sangat mudah, mulai dari penawaran harga sampai dokumen check-in semuanya tersusun rapi. Operasional agen kami jadi jauh lebih efisien di musim umroh.</p>
+        <div class="tau">Ustadz Farid Al-Amin</div>
+        <div class="tro" data-id="Pimpinan, Al Baitussalam Tour" data-en="Director, Al Baitussalam Tour">Pimpinan, Al Baitussalam Tour</div>
+      </div>
+    </div>
+    <div class="cslide">
+      <div class="tcard">
+        <div class="tstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="tq" data-id="Rate B2B yang diberikan sangat masuk akal dan transparan. Kami bisa menghitung margin dengan jelas, dan kualitas hotel yang Safa rekomendasikan selalu sesuai ekspektasi jamaah kami." data-en="The B2B rates offered are reasonable and transparent. We can calculate our margins clearly, and the hotels Safa recommends always meet our pilgrims' expectations.">Rate B2B yang diberikan sangat masuk akal dan transparan. Kami bisa menghitung margin dengan jelas, dan kualitas hotel yang Safa rekomendasikan selalu sesuai ekspektasi jamaah kami.</p>
+        <div class="tau">Ibu Dewi Kurniawati</div>
+        <div class="tro" data-id="Direktur Operasional, Mutiara Ziarah" data-en="Operations Director, Mutiara Ziarah">Direktur Operasional, Mutiara Ziarah</div>
+      </div>
+    </div>
+    <div class="cslide">
+      <div class="tcard">
+        <div class="tstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="tq" data-id="Saat ada permintaan kamar mendadak di luar kuota, tim Safa selalu punya solusi cepat. Respons mereka luar biasa — hal yang sangat krusial dalam bisnis umroh yang penuh dinamika." data-en="When there are last-minute room requests outside our quota, the Safa team always finds a quick solution. Their responsiveness is outstanding — critical in the dynamic umrah business.">Saat ada permintaan kamar mendadak di luar kuota, tim Safa selalu punya solusi cepat. Respons mereka luar biasa — hal yang sangat krusial dalam bisnis umroh yang penuh dinamika.</p>
+        <div class="tau">Bapak Rizky Pratama</div>
+        <div class="tro" data-id="CEO, Arafah Wisata" data-en="CEO, Arafah Wisata">CEO, Arafah Wisata</div>
+      </div>
+    </div>
+    <div class="cslide">
+      <div class="tcard">
+        <div class="tstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="tq" data-id="Harga B2B Safa Group sangat kompetitif. Kami berhasil menawarkan paket umroh yang lebih terjangkau kepada jamaah tanpa mengorbankan kualitas hotel sama sekali." data-en="Safa Group's B2B rates are very competitive. We've been able to offer more affordable umrah packages to pilgrims without sacrificing hotel quality at all.">Harga B2B Safa Group sangat kompetitif. Kami berhasil menawarkan paket umroh yang lebih terjangkau kepada jamaah tanpa mengorbankan kualitas hotel sama sekali.</p>
+        <div class="tau">Bapak Hendra Wijaya</div>
+        <div class="tro" data-id="CEO, Zamzam Holidays" data-en="CEO, Zamzam Holidays">CEO, Zamzam Holidays</div>
+      </div>
+    </div>
+    <div class="cnav">
+      <button class="cn" onclick="slide(-1)" aria-label="Previous">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="15,18 9,12 15,6"/></svg>
+      </button>
+      <div class="cdots">
+        <span class="cd on" onclick="goSlide(0)"></span>
+        <span class="cd" onclick="goSlide(1)"></span>
+        <span class="cd" onclick="goSlide(2)"></span>
+        <span class="cd" onclick="goSlide(3)"></span>
+        <span class="cd" onclick="goSlide(4)"></span>
+        <span class="cd" onclick="goSlide(5)"></span>
+      </div>
+      <button class="cn" onclick="slide(1)" aria-label="Next">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9,18 15,12 9,6"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+<div class="container">
+  <div class="cgrid">
+    <div class="cleft" data-r="left">
+      <span class="lbl" style="color:rgba(8,17,30,.55);margin-bottom:.75rem" data-id="Bergabung Sekarang" data-en="Join Now">Bergabung Sekarang</span>
+      <h2 data-id="Daftarkan Agen Anda sebagai Mitra Resmi" data-en="Register Your Agency as Official Partner">Daftarkan Agen Anda sebagai Mitra Resmi</h2>
+      <p data-id="Isi formulir atau hubungi kami langsung via WhatsApp. Tim kami merespons dalam 1×24 jam di hari kerja." data-en="Fill in the form or contact us directly via WhatsApp. Our team responds within 24 business hours.">Isi formulir atau hubungi kami langsung via WhatsApp. Tim kami merespons dalam 1×24 jam di hari kerja.</p>
+      <a class="wa" href="https://wa.me/628123456789?text=Halo+Safa+Hotel+Network%2C+saya+ingin+mendaftar+sebagai+mitra+agen." target="_blank" rel="noopener">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        <span data-id="Hubungi via WhatsApp" data-en="Contact via WhatsApp">Hubungi via WhatsApp</span>
+      </a>
+    </div>
+    <div data-r="right">
+      <div class="cform">
+        <div id="ff">
+          <div class="fr"><label data-id="Nama Lengkap" data-en="Full Name">Nama Lengkap</label><input id="fn" type="text" placeholder="Ahmad Fauzi"></div>
+          <div class="fr"><label data-id="Nama Perusahaan / Agen" data-en="Company / Agency Name">Nama Perusahaan / Agen</label><input id="fc" type="text" placeholder="PT. Barokah Wisata"></div>
+          <div class="fr"><label data-id="Nomor WhatsApp" data-en="WhatsApp Number">Nomor WhatsApp</label><input id="fw" type="tel" placeholder="+62 812 3456 7890"></div>
+          <div class="fr"><label>Email</label><input id="fe" type="email" placeholder="agen@barokahwisata.id"></div>
+          <button class="fsub" onclick="submitF()" data-id="Kirim Pendaftaran" data-en="Submit Registration">Kirim Pendaftaran</button>
+        </div>
+        <div class="fok" id="fok">
+          <svg width="52" height="52" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+          <h3 data-id="Pendaftaran Terkirim!" data-en="Registration Sent!">Pendaftaran Terkirim!</h3>
+          <p data-id="Tim kami akan menghubungi Anda dalam 1x24 jam hari kerja." data-en="Our team will contact you within 24 business hours.">Tim kami akan menghubungi Anda dalam 1×24 jam hari kerja.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+<div class="container">
+  <div class="fgrid">
+    <div>
+      <div class="flogo"><img src="data:image/png;base64,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+/+KBfXM6zxNtTq+LBuxZ1SbeTtAxLO6x/80zh9njrv5qyn5w/bC5vLh7C5P7FP/Mn25WNgsBiivyp5KK37JlzVPMqPelRWCRQEistMML4A50+spriXj2dTlakZxZkG/FpOv5tV1wbrmmuwxqecfqp2NWeSF1vI/r7t+Qb6wuXqrel7GbOhvRDXdAXFCzO2g7sr4qhgIjeOtFlY1tqGYX3/RIFrGY7sr4gnRsCbgrTFCd1P23ZFFvZ+yDGP5oME0ZmPky5eTfC0tm9/8Wbkqe1J+iC1qburPdGoHzI1Rq3pv6K6KN5kTQsAbp251m8+woT9hwPDCYfbMITJfT2ZQl2aX5ofb8uq/WTW6kJ/7dRR2NJt6K/2zxRHhneVP03kHj9P58dm0nriUjdVKHw+jtqK6JvvtpuOXxkA3RF5Gy/646vL/FcfX3+p3xhiloh5Z1Hxh8LLrytXxB+Xq7JM2rz5pkGz7e8P3HYzryLmsXlQ/N363eW72WZ+oXw7UzgPbZVJEASIP3GCVtIVwS0rpK9MrtydIdgxerbZbHb7cH27BzOpvdC7lacW+cTkZ/zcmy0Put3mZ3poflz7uywiMbzWk8uUQ7DYAxga3h/CTrN38qKn4K++vy0hEAl3/D+CLRvp51uZ7XrPMIYbU3/gokP4O+Cn9635p0Gv4UsD6PZkRGneMz9ZvaH6RXeludwNQhk5l9Zdj5C2kfkCaYSR6m1v8++xF/WE3C+EWT+krWx2fwX7iKYVPcUfzcnM+6GD8V389SoV9lDvT0y3ZxwC+8zhqX0awRc2a3pX5MbHty2Ju/wQEj/5zL/24YkGzxr9FbsdQmdlPcb92uGsgr6DsXp0tyFP9qd7l+dGtV1fXAd/G7GYD9y5uy6nv/mjze2OPjlc1rXB8ZmnCJ4io4KGI7NWjXNuugp5xpWNvWA3ue0lpn3tbbX5/V5LvaCvZrfa8X6cTSBHZCxreHQXAtrf7MsLMhsu9v6f3/XnszNfa3j8zH3ePf7YTDtt9/v79w3Zu2+Hr3Z9jsN3H7OD27R2X7e0vvr3XXLaMsL1jcY/XVUkTEXm4B4+Ogo6TiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIjM8P8DZwcelxtQOTEAAAAASUVORK5CYII=" alt="Safa Hotel Network"><div class="fbrand"><span class="fbname">Safa Hotel Network</span><span class="fbara" aria-hidden="true">شبكة فنادق صفا</span></div></div>
+      <p class="fdesc" data-id="Mitra hotel B2B terpercaya untuk agen travel umroh di Indonesia. Menghubungkan Anda dengan hotel-hotel terbaik di Makkah dan Madinah." data-en="The trusted B2B hotel partner for Indonesian umrah travel agencies. Connecting you with the finest hotels in Makkah and Madinah.">Mitra hotel B2B terpercaya untuk agen travel umroh di Indonesia. Menghubungkan Anda dengan hotel-hotel terbaik di Makkah dan Madinah.</p>
+    </div>
+    <div class="fcol">
+      <h4 data-id="Navigasi" data-en="Navigation">Navigasi</h4>
+      <ul>
+        <li><a href="#about" data-id="Tentang Kami" data-en="About Us">Tentang Kami</a></li>
+        <li><a href="#hotels" data-id="Portofolio Hotel" data-en="Hotel Portfolio">Portofolio Hotel</a></li>
+        <li><a href="#srv" data-id="Layanan" data-en="Services">Layanan</a></li>
+        <li><a href="#how" data-id="Cara Kerja" data-en="How It Works">Cara Kerja</a></li>
+        <li><a href="#testi" data-id="Mitra Kami" data-en="Our Partners">Mitra Kami</a></li>
+        <li><a href="#contact" data-id="Daftar Mitra" data-en="Become a Partner">Daftar Mitra</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4 data-id="Kontak" data-en="Contact">Kontak</h4>
+      <div class="fci"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg><span>+62 812-3456-7890</span></div>
+      <div class="fci"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>partner@safagroup.id</span></div>
+      <div class="fci"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-id="Jakarta Selatan, Indonesia" data-en="South Jakarta, Indonesia">Jakarta Selatan, Indonesia</span></div>
+    </div>
+    <div class="fcol">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#" onclick="openLegal('sk');return false;" data-id="Syarat & Ketentuan" data-en="Terms & Conditions">Syarat &amp; Ketentuan</a></li>
+        <li><a href="#" onclick="openLegal('pp');return false;" data-id="Kebijakan Privasi" data-en="Privacy Policy">Kebijakan Privasi</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fbot"><p data-id="© 2025 Safa Hotel Network. Seluruh hak cipta dilindungi." data-en="© 2025 Safa Hotel Network. All rights reserved.">© 2025 Safa Hotel Network. Seluruh hak cipta dilindungi.</p></div>
+</div>
+</footer>
+
+<!-- MODAL: SYARAT & KETENTUAN -->
+<div class="lmodal-overlay" id="modal-sk" role="dialog" aria-modal="true" aria-labelledby="modal-sk-title">
+  <div class="lmodal">
+    <div class="lmodal-head">
+      <div class="lm-sub">Legal Document</div>
+      <h2 id="modal-sk-title">Syarat &amp; Ketentuan</h2>
+      <button class="lmodal-close" onclick="closeLegal()" aria-label="Tutup">&#x2715;</button>
+    </div>
+    <div class="lmodal-body">
+      <h3>1. Penerimaan Syarat</h3>
+      <p>Dengan mengakses layanan Safa Hotel Network, Anda sebagai mitra agen travel menyatakan telah membaca, memahami, dan menyetujui seluruh syarat dan ketentuan yang tercantum dalam dokumen ini. Jika Anda tidak menyetujui salah satu ketentuan, harap tidak menggunakan layanan kami.</p>
+
+      <h3>2. Definisi Layanan</h3>
+      <p>Safa Hotel Network adalah platform B2B yang menghubungkan agen perjalanan umroh dan haji yang terdaftar di Indonesia dengan jaringan hotel mitra di Makkah dan Madinah. Layanan mencakup: negosiasi tarif hotel, alokasi kamar, dukungan operasional, dan akses ke portofolio properti eksklusif.</p>
+
+      <h3>3. Persyaratan Kemitraan</h3>
+      <p>Untuk menjadi mitra resmi Safa Hotel Network, agen travel wajib memenuhi syarat berikut:</p>
+      <ul>
+        <li>Memiliki izin usaha perjalanan wisata yang masih berlaku (TDUP/NIB) dari instansi berwenang.</li>
+        <li>Terdaftar sebagai penyelenggara perjalanan ibadah umroh di Kementerian Agama RI (PPIU).</li>
+        <li>Menandatangani Perjanjian Kerja Sama (PKS) dengan Safa Hotel Network.</li>
+        <li>Memenuhi persyaratan minimum volume pemesanan yang ditetapkan secara berkala.</li>
+      </ul>
+
+      <h3>4. Pemesanan dan Konfirmasi</h3>
+      <p>Seluruh pemesanan hotel dilakukan melalui jalur resmi yang telah disepakati (email, sistem, atau komunikasi langsung dengan tim kami). Pemesanan dianggap sah setelah mendapatkan konfirmasi tertulis dari Safa Hotel Network beserta nomor referensi. Ketersediaan kamar bersifat dinamis dan tidak dapat dijamin hingga konfirmasi tertulis diterima.</p>
+
+      <h3>5. Tarif dan Pembayaran</h3>
+      <p>Tarif hotel yang kami tawarkan merupakan tarif net khusus mitra B2B dan bersifat rahasia. Mitra dilarang mempublikasikan tarif tersebut kepada pihak luar tanpa izin tertulis. Pembayaran dilakukan sesuai jadwal yang tertera dalam PKS. Keterlambatan pembayaran dapat mengakibatkan pembatalan pemesanan dan pengenaan denda sesuai ketentuan yang berlaku.</p>
+
+      <h3>6. Pembatalan dan Refund</h3>
+      <p>Kebijakan pembatalan mengikuti ketentuan masing-masing hotel mitra dan dapat bervariasi berdasarkan musim, jenis kamar, dan waktu pembatalan. Permintaan pembatalan harus disampaikan secara tertulis. Proses refund (bila ada) dilakukan dalam 14–30 hari kerja setelah pembatalan dikonfirmasi, dengan potongan biaya pembatalan yang berlaku.</p>
+
+      <h3>7. Hak dan Kewajiban Mitra</h3>
+      <p>Mitra berhak mendapatkan: tarif kompetitif, dukungan operasional, dan akses ke informasi properti terbaru. Mitra berkewajiban untuk: menyampaikan informasi jamaah yang akurat, mematuhi batas waktu pembayaran, dan tidak menggunakan merek atau materi Safa Hotel Network tanpa izin.</p>
+
+      <h3>8. Batasan Tanggung Jawab</h3>
+      <p>Safa Hotel Network tidak bertanggung jawab atas kerugian yang timbul akibat force majeure (bencana alam, kebijakan pemerintah, pandemi, dll), kegagalan layanan dari pihak hotel yang berada di luar kendali kami, atau informasi yang tidak akurat yang diberikan oleh mitra. Total tanggung jawab kami dibatasi pada nilai transaksi yang terdampak.</p>
+
+      <h3>9. Kerahasiaan</h3>
+      <p>Kedua pihak sepakat untuk menjaga kerahasiaan informasi bisnis, tarif, dan data operasional yang diperoleh dalam rangka kerjasama. Kewajiban kerahasiaan ini berlaku selama masa kerjasama dan 2 (dua) tahun setelahnya.</p>
+
+      <h3>10. Penyelesaian Sengketa</h3>
+      <p>Setiap sengketa yang timbul dari kerjasama ini akan diselesaikan secara musyawarah. Jika tidak tercapai kesepakatan dalam 30 hari, sengketa akan diselesaikan melalui Badan Arbitrase Nasional Indonesia (BANI) di Jakarta sesuai peraturan yang berlaku.</p>
+
+      <h3>11. Perubahan Ketentuan</h3>
+      <p>Safa Hotel Network berhak mengubah syarat dan ketentuan ini sewaktu-waktu dengan pemberitahuan tertulis kepada mitra minimal 30 hari sebelumnya. Penggunaan layanan setelah tanggal berlakunya perubahan dianggap sebagai persetujuan atas ketentuan baru.</p>
+    </div>
+    <div class="lmodal-foot">Berlaku sejak 1 Januari 2025 &nbsp;·&nbsp; Safa Hotel Network &nbsp;·&nbsp; Jakarta, Indonesia</div>
+  </div>
+</div>
+
+<!-- MODAL: KEBIJAKAN PRIVASI -->
+<div class="lmodal-overlay" id="modal-pp" role="dialog" aria-modal="true" aria-labelledby="modal-pp-title">
+  <div class="lmodal">
+    <div class="lmodal-head">
+      <div class="lm-sub">Legal Document</div>
+      <h2 id="modal-pp-title">Kebijakan Privasi</h2>
+      <button class="lmodal-close" onclick="closeLegal()" aria-label="Tutup">&#x2715;</button>
+    </div>
+    <div class="lmodal-body">
+      <h3>1. Pendahuluan</h3>
+      <p>Safa Hotel Network berkomitmen melindungi privasi seluruh mitra dan pengguna layanan kami. Kebijakan Privasi ini menjelaskan jenis data yang kami kumpulkan, cara penggunaannya, dan hak-hak Anda atas data tersebut. Dengan menggunakan layanan kami, Anda menyetujui praktik yang diuraikan dalam kebijakan ini.</p>
+
+      <h3>2. Data yang Kami Kumpulkan</h3>
+      <p>Kami mengumpulkan data dalam dua kategori utama:</p>
+      <ul>
+        <li><strong>Data identitas bisnis:</strong> nama perusahaan, nomor izin usaha, NPWP, alamat kantor, dan informasi kontak penanggung jawab.</li>
+        <li><strong>Data operasional:</strong> nama jamaah, tanggal perjalanan, preferensi kamar, dan informasi pemesanan lainnya yang diperlukan untuk memproses reservasi.</li>
+        <li><strong>Data komunikasi:</strong> pesan email, log percakapan, dan catatan rapat yang berkaitan dengan kerjasama.</li>
+        <li><strong>Data teknis:</strong> alamat IP, jenis browser, dan data penggunaan situs web (dikumpulkan secara anonim melalui analitik).</li>
+      </ul>
+
+      <h3>3. Cara Kami Menggunakan Data</h3>
+      <p>Data yang dikumpulkan digunakan untuk tujuan berikut:</p>
+      <ul>
+        <li>Memproses pemesanan hotel dan konfirmasi reservasi.</li>
+        <li>Berkomunikasi dengan mitra terkait operasional, penawaran, dan pembaruan layanan.</li>
+        <li>Memenuhi kewajiban hukum dan pelaporan perpajakan.</li>
+        <li>Meningkatkan kualitas layanan dan pengembangan produk.</li>
+        <li>Mengirimkan informasi promosi dan penawaran eksklusif (dapat di-opt-out kapan saja).</li>
+      </ul>
+
+      <h3>4. Dasar Hukum Pemrosesan</h3>
+      <p>Pemrosesan data Anda didasarkan pada: pelaksanaan perjanjian kerjasama (PKS), kewajiban hukum yang berlaku di Indonesia (UU PDP No. 27 Tahun 2022), kepentingan bisnis yang sah, dan persetujuan eksplisit Anda untuk komunikasi pemasaran.</p>
+
+      <h3>5. Berbagi Data dengan Pihak Ketiga</h3>
+      <p>Kami tidak menjual data Anda. Data dapat dibagikan kepada pihak ketiga hanya dalam kondisi berikut:</p>
+      <ul>
+        <li><strong>Hotel mitra:</strong> data jamaah yang diperlukan untuk proses check-in dan layanan kamar.</li>
+        <li><strong>Penyedia layanan teknologi:</strong> platform email, sistem CRM, dan analitik yang terikat perjanjian kerahasiaan dengan kami.</li>
+        <li><strong>Otoritas hukum:</strong> jika diwajibkan oleh peraturan perundang-undangan yang berlaku.</li>
+      </ul>
+
+      <h3>6. Keamanan Data</h3>
+      <p>Kami menerapkan langkah-langkah keamanan teknis dan organisasional yang sesuai untuk melindungi data Anda, termasuk enkripsi data saat transit (SSL/TLS), kontrol akses berbasis peran, dan prosedur respons insiden keamanan. Namun, tidak ada sistem yang sepenuhnya bebas risiko — kami mendorong Anda untuk menjaga kerahasiaan kredensial akun Anda.</p>
+
+      <h3>7. Retensi Data</h3>
+      <p>Data mitra aktif disimpan selama masa kerjasama berlangsung. Setelah kerjasama berakhir, data operasional disimpan selama 5 (lima) tahun sesuai ketentuan perpajakan Indonesia. Data yang tidak lagi diperlukan akan dihapus atau dianonimkan secara aman.</p>
+
+      <h3>8. Hak Anda atas Data</h3>
+      <p>Berdasarkan regulasi perlindungan data yang berlaku, Anda berhak untuk:</p>
+      <ul>
+        <li>Mengakses data pribadi Anda yang kami simpan.</li>
+        <li>Meminta koreksi data yang tidak akurat.</li>
+        <li>Meminta penghapusan data dalam kondisi tertentu.</li>
+        <li>Menarik persetujuan untuk komunikasi pemasaran kapan saja.</li>
+        <li>Mengajukan keluhan kepada otoritas perlindungan data yang berwenang.</li>
+      </ul>
+      <p>Untuk menggunakan hak-hak tersebut, hubungi kami di <strong>privacy@safagroup.id</strong>.</p>
+
+      <h3>9. Cookie dan Analitik</h3>
+      <p>Situs web kami menggunakan cookie teknis yang diperlukan untuk fungsi dasar dan cookie analitik anonim untuk memahami pola penggunaan. Anda dapat mengatur preferensi cookie melalui pengaturan browser Anda. Menonaktifkan cookie dapat mempengaruhi fungsionalitas situs.</p>
+
+      <h3>10. Perubahan Kebijakan</h3>
+      <p>Kami dapat memperbarui kebijakan privasi ini dari waktu ke waktu. Perubahan signifikan akan diinformasikan melalui email atau pemberitahuan di situs web kami. Tanggal pembaruan terakhir akan selalu ditampilkan di bagian bawah dokumen ini.</p>
+
+      <h3>11. Hubungi Kami</h3>
+      <p>Jika Anda memiliki pertanyaan tentang kebijakan privasi ini atau cara kami mengelola data Anda, silakan hubungi tim Privacy kami melalui <strong>privacy@safagroup.id</strong> atau kirimkan surat ke alamat kantor kami di Jakarta Selatan, Indonesia.</p>
+    </div>
+    <div class="lmodal-foot">Terakhir diperbarui: 1 Januari 2025 &nbsp;·&nbsp; Safa Hotel Network &nbsp;·&nbsp; Jakarta, Indonesia</div>
+  </div>
+</div>
+
+<script>
+// ── LEGAL MODALS ──
+function openLegal(id){
+  const overlay=document.getElementById('modal-'+id);
+  if(!overlay)return;
+  document.querySelectorAll('.lmodal-overlay').forEach(el=>el.classList.remove('open'));
+  overlay.classList.add('open');
+  document.body.style.overflow='hidden';
+  overlay.querySelector('.lmodal-body').scrollTop=0;
+}
+function closeLegal(){
+  document.querySelectorAll('.lmodal-overlay').forEach(el=>el.classList.remove('open'));
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLegal();});
+document.querySelectorAll('.lmodal-overlay').forEach(overlay=>{
+  overlay.addEventListener('click',e=>{if(e.target===overlay)closeLegal();});
+});
+
+// ── LANG ──
+let lang='id';
+function setLang(l){
+  lang=l;
+  document.querySelectorAll('.lbtn').forEach((b,i)=>b.classList.toggle('on',i===(l==='id'?0:1)));
+  document.querySelectorAll('[data-id]').forEach(el=>{
+    const v=el.dataset[l]; if(v!==undefined) el.textContent=v;
+  });
+}
+
+// ── NAVBAR ──
+const nav=document.getElementById('nav');
+const updateNav=()=>nav.classList.toggle('solid',window.scrollY>30);
+window.addEventListener('scroll',updateNav,{passive:true});
+updateNav();
+
+// ── HAMBURGER ──
+function toggleM(){document.getElementById('hbg').classList.toggle('open');document.getElementById('mnav').classList.toggle('open');}
+function closeM(){document.getElementById('hbg').classList.remove('open');document.getElementById('mnav').classList.remove('open');}
+
+// ── SMOOTH SCROLL ──
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+  const t=document.querySelector(a.getAttribute('href'));
+  if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+}));
+
+// ── PARTICLE CANVAS ──
+(function(){
+  const c=document.getElementById('ptx');
+  if(!c)return;
+  const ctx=c.getContext('2d');
+  let W,H,pts=[];
+
+  function resize(){
+    const p=c.parentElement;
+    W=c.width=p?p.offsetWidth:window.innerWidth;
+    H=c.height=p?p.offsetHeight:window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize',()=>{resize();init();},{passive:true});
+
+  function Pt(){
+    this.x=Math.random()*W; this.y=Math.random()*H;
+    this.r=Math.random()*1.5+.5;
+    this.vx=(Math.random()-.5)*.4; this.vy=(Math.random()-.5)*.4;
+    this.op=Math.random()*.4+.1;
+  }
+  function init(){pts=[];for(let i=0;i<110;i++)pts.push(new Pt());}
+  init();
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    // connections
+    for(let i=0;i<pts.length;i++){
+      for(let j=i+1;j<pts.length;j++){
+        const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y;
+        const d=Math.sqrt(dx*dx+dy*dy);
+        if(d<160){
+          ctx.beginPath();ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);
+          ctx.strokeStyle=`rgba(219,146,0,${.22*(1-d/160)})`;ctx.lineWidth=.6;ctx.stroke();
+        }
+      }
+    }
+    pts.forEach(p=>{
+      p.x+=p.vx;p.y+=p.vy;
+      if(p.x<0||p.x>W)p.vx*=-1;
+      if(p.y<0||p.y>H)p.vy*=-1;
+      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(220,185,100,${Math.min(p.op*1.5,.55)})`;ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// ── KA'BAH CANVAS ──
+(function(){
+  const c=document.getElementById('h3c');
+  if(!c)return;
+  const ctx=c.getContext('2d');
+  let W,H,t=0,rotY=0;
+  const TILT=0.26;
+
+  function resize(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight;}
+  resize();
+  window.addEventListener('resize',resize,{passive:true});
+
+  function proj(x,y,z){
+    const rx= x*Math.cos(rotY)+z*Math.sin(rotY);
+    let   rz=-x*Math.sin(rotY)+z*Math.cos(rotY);
+    const ry2= y*Math.cos(TILT)+rz*Math.sin(TILT);
+    const rz2=-y*Math.sin(TILT)+rz*Math.cos(TILT);
+    const sc=_fov/(rz2+_dist);
+    return{sx:_cx+rx*sc, sy:_cy+ry2*sc, z:rz2, sc};
+  }
+  let _fov,_dist,_cx,_cy;
+
+  function bl(Q,u,v){
+    const T={sx:Q[0].sx+(Q[1].sx-Q[0].sx)*u, sy:Q[0].sy+(Q[1].sy-Q[0].sy)*u};
+    const B={sx:Q[3].sx+(Q[2].sx-Q[3].sx)*u, sy:Q[3].sy+(Q[2].sy-Q[3].sy)*u};
+    return{sx:T.sx+(B.sx-T.sx)*v, sy:T.sy+(B.sy-T.sy)*v};
+  }
+
+  function polyPath(P,idx){
+    ctx.beginPath();
+    idx.forEach((i,j)=>j?ctx.lineTo(P[i].sx,P[i].sy):ctx.moveTo(P[i].sx,P[i].sy));
+    ctx.closePath();
+  }
+
+  function cross(P,i0,i1,i3){
+    return(P[i1].sx-P[i0].sx)*(P[i3].sy-P[i0].sy)
+          -(P[i1].sy-P[i0].sy)*(P[i3].sx-P[i0].sx);
+  }
+
+  function draw(){
+    W=c.width; H=c.height;
+    ctx.clearRect(0,0,W,H);
+
+    _cx=W*.5; _cy=H*.48;
+    const sz=Math.min(W,H)*.24;
+    _fov=sz*2.8; _dist=sz*3.4;
+
+    const hw=sz, hd=sz*.88, hh=sz*1.14;
+    _cy+=Math.sin(t*.5)*sz*.015;
+
+    const V=[
+      [-hw,-hh, hd],[ hw,-hh, hd],[ hw,-hh,-hd],[-hw,-hh,-hd],
+      [-hw, hh, hd],[ hw, hh, hd],[ hw, hh,-hd],[-hw, hh,-hd],
+    ];
+    const P=V.map(([x,y,z])=>proj(x,y,z));
+
+    const FACES=[
+      {i:[3,2,1,0], n:'top'},
+      {i:[0,1,5,4], n:'front'},
+      {i:[1,2,6,5], n:'right'},
+      {i:[3,0,4,7], n:'left'},
+      {i:[2,3,7,6], n:'back'},
+    ];
+
+    const vis=FACES
+      .filter(f=>cross(P,f.i[0],f.i[1],f.i[3])>0)
+      .sort((a,b)=>
+        b.i.reduce((s,i)=>s+P[i].z,0)-a.i.reduce((s,i)=>s+P[i].z,0)
+      );
+
+    // Outer gold halo
+    const halo=ctx.createRadialGradient(_cx,_cy,sz*.2,_cx,_cy,sz*2.5);
+    halo.addColorStop(0,'rgba(219,146,0,.12)');
+    halo.addColorStop(.4,'rgba(219,146,0,.04)');
+    halo.addColorStop(1,'transparent');
+    ctx.beginPath();ctx.arc(_cx,_cy,sz*2.5,0,Math.PI*2);
+    ctx.fillStyle=halo;ctx.fill();
+
+    vis.forEach(f=>{
+      const [i0,i1,i2,i3]=f.i;
+      const Q=[P[i0],P[i1],P[i2],P[i3]];
+      const isTop=f.n==='top', isFront=f.n==='front';
+
+      // Face fill — navy (readable against dark bg)
+      polyPath(P,f.i);
+      ctx.fillStyle= isTop ? '#12203e' : isFront ? '#0f1c38' : '#0b1530';
+      ctx.fill();
+
+      if(!isTop){
+        // Kiswah Hizam band (top 27% of side faces)
+        const bBL=bl(Q,0,.27), bBR=bl(Q,1,.27);
+
+        // Belt fill (lighter tint)
+        ctx.beginPath();
+        ctx.moveTo(Q[0].sx,Q[0].sy); ctx.lineTo(Q[1].sx,Q[1].sy);
+        ctx.lineTo(bBR.sx,bBR.sy);   ctx.lineTo(bBL.sx,bBL.sy);
+        ctx.closePath();
+        ctx.fillStyle='#162440';ctx.fill();
+
+        // Belt bottom edge: wide glow + mid + crisp
+        for(const [a,lw] of [[.15,16],[.42,5],[.78,1.6]]){
+          ctx.beginPath();ctx.moveTo(bBL.sx,bBL.sy);ctx.lineTo(bBR.sx,bBR.sy);
+          ctx.strokeStyle=`rgba(240,168,0,${a})`;ctx.lineWidth=lw;ctx.stroke();
+        }
+        // Shimmer
+        ctx.beginPath();ctx.moveTo(bBL.sx,bBL.sy);ctx.lineTo(bBR.sx,bBR.sy);
+        ctx.strokeStyle=`rgba(255,218,100,${.3+Math.sin(t*.4)*.1})`;ctx.lineWidth=.7;ctx.stroke();
+
+        // Belt top edge (subtle)
+        ctx.beginPath();ctx.moveTo(Q[0].sx,Q[0].sy);ctx.lineTo(Q[1].sx,Q[1].sy);
+        ctx.strokeStyle='rgba(240,168,0,.22)';ctx.lineWidth=1;ctx.stroke();
+
+        // Arabic calligraphy dashes inside belt
+        for(let d=0;d<8;d++){
+          const u0=.04+d*.115, u1=u0+.07;
+          const vy=.08+Math.sin(d*1.4)*.06;
+          const pa=bl(Q,u0,vy), pb=bl(Q,u1,vy);
+          ctx.beginPath();ctx.moveTo(pa.sx,pa.sy);ctx.lineTo(pb.sx,pb.sy);
+          ctx.strokeStyle='rgba(219,146,0,.30)';ctx.lineWidth=1;ctx.stroke();
+        }
+      }
+
+      // Face outline — gold wireframe
+      polyPath(P,f.i);
+      ctx.strokeStyle='rgba(219,146,0,.16)';ctx.lineWidth=10;ctx.stroke();
+      ctx.strokeStyle='rgba(240,168,0,.65)';ctx.lineWidth=1.4;ctx.stroke();
+
+      if(isFront){
+        // Door: centred, u 0.34-0.66, v 0.26-0.83
+        const dTL=bl(Q,.34,.26), dTR=bl(Q,.66,.26);
+        const dBL=bl(Q,.34,.83), dBR=bl(Q,.66,.83);
+        const da=.80+Math.sin(t*.5)*.12;
+
+        // Door fill
+        ctx.beginPath();
+        ctx.moveTo(dTL.sx,dTL.sy);ctx.lineTo(dTR.sx,dTR.sy);
+        ctx.lineTo(dBR.sx,dBR.sy);ctx.lineTo(dBL.sx,dBL.sy);
+        ctx.closePath();
+        ctx.fillStyle='#080e1c';ctx.fill();
+
+        // Door frame layers
+        for(const [a,lw] of [[da*.16,14],[da*.40,4],[da,1.8]]){
+          ctx.beginPath();
+          ctx.moveTo(dTL.sx,dTL.sy);ctx.lineTo(dTR.sx,dTR.sy);
+          ctx.lineTo(dBR.sx,dBR.sy);ctx.lineTo(dBL.sx,dBL.sy);
+          ctx.closePath();
+          ctx.strokeStyle=`rgba(240,168,0,${a})`;ctx.lineWidth=lw;ctx.stroke();
+        }
+
+        // Arch above door
+        const archH=(dBL.sy-dTL.sy)*.15;
+        const aM={sx:(dTL.sx+dTR.sx)*.5, sy:(dTL.sy+dTR.sy)*.5-archH};
+        ctx.beginPath();ctx.moveTo(dTL.sx,dTL.sy);
+        ctx.quadraticCurveTo(aM.sx,aM.sy,dTR.sx,dTR.sy);
+        ctx.strokeStyle=`rgba(255,210,90,${da*.9})`;ctx.lineWidth=1.6;ctx.stroke();
+
+        // Vertical + horizontal dividers
+        const dMT={sx:(dTL.sx+dTR.sx)*.5,sy:(dTL.sy+dTR.sy)*.5};
+        const dMB={sx:(dBL.sx+dBR.sx)*.5,sy:(dBL.sy+dBR.sy)*.5};
+        ctx.beginPath();ctx.moveTo(dMT.sx,dMT.sy);ctx.lineTo(dMB.sx,dMB.sy);
+        ctx.strokeStyle=`rgba(240,168,0,${da*.32})`;ctx.lineWidth=.9;ctx.stroke();
+        const mL={sx:(dTL.sx+dBL.sx)*.5,sy:(dTL.sy+dBL.sy)*.5};
+        const mR={sx:(dTR.sx+dBR.sx)*.5,sy:(dTR.sy+dBR.sy)*.5};
+        ctx.beginPath();ctx.moveTo(mL.sx,mL.sy);ctx.lineTo(mR.sx,mR.sy);
+        ctx.strokeStyle=`rgba(240,168,0,${da*.28})`;ctx.lineWidth=.9;ctx.stroke();
+
+        // Step below door
+        const sTL=bl(Q,.28,.83),sTR=bl(Q,.72,.83);
+        const sBL=bl(Q,.28,.94),sBR=bl(Q,.72,.94);
+        ctx.beginPath();
+        ctx.moveTo(sTL.sx,sTL.sy);ctx.lineTo(sTR.sx,sTR.sy);
+        ctx.lineTo(sBR.sx,sBR.sy);ctx.lineTo(sBL.sx,sBL.sy);
+        ctx.closePath();
+        ctx.fillStyle='#0d1a32';ctx.fill();
+        ctx.strokeStyle=`rgba(240,168,0,${da*.50})`;ctx.lineWidth=1.1;ctx.stroke();
+
+        // Hajar al-Aswad (black stone, right corner at ~55% height)
+        const hj=bl(Q,1,.54);
+        ctx.beginPath();ctx.arc(hj.sx,hj.sy,sz*.045,0,Math.PI*2);
+        ctx.fillStyle='#050a14';ctx.fill();
+        ctx.strokeStyle='rgba(240,168,0,.72)';ctx.lineWidth=1.3;ctx.stroke();
+        ctx.beginPath();ctx.arc(hj.sx,hj.sy,sz*.022,0,Math.PI*2);
+        ctx.fillStyle='#1a1008';ctx.fill();
+      }
+
+      if(isTop){
+        // Subtle diagonal lines show flat rooftop
+        [[0,0,1,1],[1,0,0,1]].forEach(([u0,v0,u1,v1])=>{
+          const a=bl(Q,u0,v0), b=bl(Q,u1,v1);
+          ctx.beginPath();ctx.moveTo(a.sx,a.sy);ctx.lineTo(b.sx,b.sy);
+          ctx.strokeStyle='rgba(219,146,0,.10)';ctx.lineWidth=1;ctx.stroke();
+        });
+      }
+    });
+
+    // Tawaf particles
+    for(let i=0;i<10;i++){
+      const ph=t*.24+i*(Math.PI*2/10);
+      const pp=proj(Math.cos(ph)*hw*1.42, hh*.87, Math.sin(ph)*hd*1.42);
+      const sc=pp.sc/(_fov/_dist);
+      const ps=(1.7+Math.sin(t*.85+i)*.5)*sc;
+      const op=.28+Math.sin(t*.55+i)*.14;
+      const g=ctx.createRadialGradient(pp.sx,pp.sy,0,pp.sx,pp.sy,ps*5);
+      g.addColorStop(0,`rgba(240,168,0,${op})`);g.addColorStop(1,'rgba(240,168,0,0)');
+      ctx.beginPath();ctx.arc(pp.sx,pp.sy,ps*5,0,Math.PI*2);ctx.fillStyle=g;ctx.fill();
+      ctx.beginPath();ctx.arc(pp.sx,pp.sy,Math.max(.4,ps*.55),0,Math.PI*2);
+      ctx.fillStyle=`rgba(255,228,130,${op+.22})`;ctx.fill();
+    }
+
+    // Ground shadow
+    const bots=[P[4],P[5],P[6],P[7]];
+    const gx=bots.reduce((s,p)=>s+p.sx,0)/4;
+    const gy=Math.max(...bots.map(p=>p.sy))+sz*.02;
+    const gr=hw*(_fov/_dist)*.9;
+    const sg=ctx.createRadialGradient(gx,gy,0,gx,gy,gr);
+    sg.addColorStop(0,'rgba(219,146,0,.11)');sg.addColorStop(1,'transparent');
+    ctx.beginPath();ctx.ellipse(gx,gy,gr,gr*.10,0,0,Math.PI*2);
+    ctx.fillStyle=sg;ctx.fill();
+  }
+
+  function loop(){t+=.016;rotY+=.003;draw();requestAnimationFrame(loop);}
+  loop();
+})();
+
+
+// ── CARD TILT ──
+document.querySelectorAll('[data-tilt]').forEach(card=>{
+  card.addEventListener('mousemove',e=>{
+    const rect=card.getBoundingClientRect();
+    const x=(e.clientX-rect.left-rect.width/2)/(rect.width/2);
+    const y=(e.clientY-rect.top-rect.height/2)/(rect.height/2);
+    card.style.transform=`perspective(800px) rotateX(${-y*10}deg) rotateY(${x*10}deg) translateZ(12px)`;
+    card.style.transition='transform 0ms';
+  });
+  card.addEventListener('mouseleave',()=>{
+    card.style.transition='transform .5s ease';
+    card.style.transform='perspective(800px) rotateX(0) rotateY(0) translateZ(0)';
+  });
+});
+
+// ── COUNTER ──
+function animCount(el,target,suffix){
+  const start=performance.now();
+  const dur=1800;
+  (function upd(now){
+    const p=Math.min((now-start)/dur,1);
+    const ease=1-Math.pow(1-p,3);
+    const val=Math.floor(ease*target);
+    el.innerHTML=(val>=1000?(val/1000).toFixed(val%1000===0?0:0)+'K':val)+(suffix||'')+'<span>+</span>';
+    if(p<1) requestAnimationFrame(upd);
+    else el.innerHTML=(target>=1000?(target/1000)+'K':target)+(suffix||'')+'<span>+</span>';
+  })(start);
+}
+
+// ── REVEAL (IntersectionObserver) ──
+const revObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting) return;
+    e.target.classList.add('vis');
+    // counters
+    e.target.querySelectorAll('.counter,.sn[data-target]').forEach(el=>{
+      if(el._counted) return; el._counted=true;
+      const t=+el.dataset.target;
+      if(el.classList.contains('sn')) animCount(el,t,t>=1000?'K':'');
+      else{const suf=el.querySelector('span')?el.querySelector('span').textContent:'';animCount(el,t,suf);}
+    });
+    revObs.unobserve(e.target);
+  });
+},{threshold:.12});
+
+document.querySelectorAll('[data-r]').forEach(el=>revObs.observe(el));
+
+// Also observe stat cards for counters
+document.querySelectorAll('.asc,.hsi').forEach(el=>revObs.observe(el));
+
+// ── TESTIMONIAL CAROUSEL ──
+let cur=0;
+const slides=document.querySelectorAll('.cslide');
+const dots=document.querySelectorAll('.cd');
+const chips=document.querySelectorAll('.pchip');
+function syncChips(){
+  chips.forEach(c=>c.classList.remove('active'));
+  const match=document.querySelector(`.pchip[data-slide="${cur}"]`);
+  if(match) match.classList.add('active');
+}
+function goSlide(n){
+  slides[cur].classList.remove('on');dots[cur].classList.remove('on');
+  cur=(n+slides.length)%slides.length;
+  slides[cur].classList.add('on');dots[cur].classList.add('on');
+  syncChips();
+}
+function slide(d){goSlide(cur+d);}
+chips.forEach(chip=>{
+  chip.addEventListener('click',function(){
+    const idx=this.dataset.slide;
+    if(idx!==undefined){
+      goSlide(parseInt(idx));
+    } else {
+      chips.forEach(c=>c.classList.remove('active'));
+      this.classList.add('active');
+    }
+  });
+});
+setInterval(()=>slide(1),5500);
+
+// ── VIDEO MODAL (removed) ──
+
+// ── FORM ──
+function submitF(){
+  const n=document.getElementById('fn').value.trim();
+  const co=document.getElementById('fc').value.trim();
+  const w=document.getElementById('fw').value.trim();
+  const em=document.getElementById('fe').value.trim();
+  if(!n||!co||!w||!em){
+    alert(lang==='id'?'Mohon lengkapi semua data.':'Please fill in all fields.');return;
+  }
+  document.getElementById('ff').style.display='none';
+  document.getElementById('fok').style.display='block';
+}
+
+
+// ── HOTEL DATA ──
+const HOTELS = [
+  {
+    name: 'Swissôtel Makkah',
+    city_id: 'Makkah', city_en: 'Makkah',
+    city_cls: 'makkah',
+    stars: 5,
+    dist_id: '100m dari Masjidil Haram', dist_en: '100m from Masjidil Haram',
+    desc_id: 'Swissôtel Makkah berdiri di Clock Tower dan menawarkan pemandangan langsung ke Ka’bah dari sebagian besar kamarnya. Hotel bintang lima ini menggabungkan arsitektur kontemporer dengan kenyamanan kelas dunia, ideal untuk jamaah yang menginginkan kemudahan akses terbaik ke Masjidil Haram.',
+    desc_en: 'Swissôtel Makkah stands within the Clock Tower complex with direct Ka’bah views from most rooms. This five-star property blends contemporary architecture with world-class comfort, ideal for pilgrims seeking the best access to Masjidil Haram.',
+    rooms: [
+      {type_id:'Superior Room',type_en:'Superior Room',cap_id:'2 tamu · 32m²',cap_en:'2 guests · 32m²'},
+      {type_id:'Deluxe Haram View',type_en:'Deluxe Haram View',cap_id:'2 tamu · 38m²',cap_en:'2 guests · 38m²'},
+      {type_id:'Grand Suite',type_en:'Grand Suite',cap_id:'4 tamu · 72m²',cap_en:'4 guests · 72m²'},
+      {type_id:'Family Room',type_en:'Family Room',cap_id:'4 tamu · 55m²',cap_en:'4 guests · 55m²'}
+    ],
+    facs_id: ['Pemandangan Ka’bah','Kolam Renang','Restoran Halal','Concierge 24 Jam','Pusat Kebugaran','Laundry','WiFi Gratis','Area Ibadah'],
+    facs_en: ['Ka’bah View','Swimming Pool','Halal Restaurant','24h Concierge','Fitness Center','Laundry','Free WiFi','Prayer Area'],
+    wa: '6281234567890'
+  },
+  {
+    name: 'Pullman ZamZam Makkah',
+    city_id: 'Makkah', city_en: 'Makkah',
+    city_cls: 'makkah',
+    stars: 5,
+    dist_id: '50m dari Masjidil Haram', dist_en: '50m from Masjidil Haram',
+    desc_id: 'Pullman ZamZam adalah salah satu hotel paling strategis di Makkah — hanya 50 meter dari pintu masuk Masjidil Haram. Hotel ini menyediakan akomodasi modern dengan fasilitas premium dan layanan profesional yang dirancang khusus untuk jamaah umroh dan haji.',
+    desc_en: 'Pullman ZamZam is one of the most strategically located hotels in Makkah — just 50 meters from the entrance to Masjidil Haram. It offers modern accommodation with premium facilities and professional services designed specifically for umrah and hajj pilgrims.',
+    rooms: [
+      {type_id:'Classic Room',type_en:'Classic Room',cap_id:'2 tamu · 30m²',cap_en:'2 guests · 30m²'},
+      {type_id:'Deluxe Room',type_en:'Deluxe Room',cap_id:'2 tamu · 36m²',cap_en:'2 guests · 36m²'},
+      {type_id:'Junior Suite',type_en:'Junior Suite',cap_id:'3 tamu · 54m²',cap_en:'3 guests · 54m²'},
+      {type_id:'Executive Suite',type_en:'Executive Suite',cap_id:'4 tamu · 68m²',cap_en:'4 guests · 68m²'}
+    ],
+    facs_id: ['Akses Langsung Haram','Lift Panoramik','Restoran Internasional','Business Center','Lounge Eksklusif','Valet Parking','WiFi Gratis','Room Service 24 Jam'],
+    facs_en: ['Direct Haram Access','Panoramic Elevator','International Restaurant','Business Center','Executive Lounge','Valet Parking','Free WiFi','24h Room Service'],
+    wa: '6281234567890'
+  },
+  {
+    name: 'Marriott Hotel Madinah',
+    city_id: 'Madinah', city_en: 'Madinah',
+    city_cls: 'madinah',
+    stars: 5,
+    dist_id: '300m dari Masjid Nabawi', dist_en: '300m from Masjid Nabawi',
+    desc_id: 'Marriott Hotel Madinah menghadirkan standar hospitality internasional di kota Nabi. Berlokasi 300 meter dari Masjid Nabawi, hotel ini menawarkan suasana tenang dan elegan yang cocok untuk jamaah yang ingin menjalani ibadah dengan khusyuk namun tetap menikmati kenyamanan premium.',
+    desc_en: 'Marriott Hotel Madinah brings international hospitality standards to the City of the Prophet. Located 300 meters from Masjid Nabawi, it offers a serene and elegant atmosphere for pilgrims seeking focused worship without sacrificing premium comfort.',
+    rooms: [
+      {type_id:'Deluxe Room',type_en:'Deluxe Room',cap_id:'2 tamu · 34m²',cap_en:'2 guests · 34m²'},
+      {type_id:'Nabawi View Room',type_en:'Nabawi View Room',cap_id:'2 tamu · 34m²',cap_en:'2 guests · 34m²'},
+      {type_id:'Junior Suite',type_en:'Junior Suite',cap_id:'3 tamu · 58m²',cap_en:'3 guests · 58m²'},
+      {type_id:'Family Suite',type_en:'Family Suite',cap_id:'5 tamu · 80m²',cap_en:'5 guests · 80m²'}
+    ],
+    facs_id: ['View Masjid Nabawi','Kolam Renang','Spa & Wellness','Restoran Halal','Ballroom','WiFi Gratis','Antar-Jemput Masjid','Concierge 24 Jam'],
+    facs_en: ['Masjid Nabawi View','Swimming Pool','Spa & Wellness','Halal Restaurant','Ballroom','Free WiFi','Mosque Shuttle','24h Concierge'],
+    wa: '6281234567890'
+  },
+  {
+    name: 'Hilton Suites Makkah',
+    city_id: 'Makkah', city_en: 'Makkah',
+    city_cls: 'makkah',
+    stars: 5,
+    dist_id: '250m dari Masjidil Haram', dist_en: '250m from Masjidil Haram',
+    desc_id: 'Hilton Suites Makkah menawarkan akomodasi berbasis suite — setiap unit dilengkapi area ruang tamu terpisah, dapur kecil, dan fasilitas lengkap. Sangat ideal untuk group keluarga besar atau rombongan jamaah yang membutuhkan ruang lebih luas selama masa ibadah.',
+    desc_en: 'Hilton Suites Makkah offers suite-based accommodation — every unit includes a separate living area, kitchenette, and full amenities. Ideal for large family groups or pilgrim delegations needing more space during their worship stay.',
+    rooms: [
+      {type_id:'Studio Suite',type_en:'Studio Suite',cap_id:'2 tamu · 42m²',cap_en:'2 guests · 42m²'},
+      {type_id:'One-Bedroom Suite',type_en:'One-Bedroom Suite',cap_id:'3 tamu · 62m²',cap_en:'3 guests · 62m²'},
+      {type_id:'Two-Bedroom Suite',type_en:'Two-Bedroom Suite',cap_id:'5 tamu · 88m²',cap_en:'5 guests · 88m²'},
+      {type_id:'Penthouse Suite',type_en:'Penthouse Suite',cap_id:'6 tamu · 120m²',cap_en:'6 guests · 120m²'}
+    ],
+    facs_id: ['Suite Lengkap','Dapur Kecil','Ruang Keluarga','Kolam Renang Outdoor','Restoran Halal','Laundry','WiFi Gratis','Parkir Luas'],
+    facs_en: ['Full Suite','Kitchenette','Family Room','Outdoor Pool','Halal Restaurant','Laundry','Free WiFi','Ample Parking'],
+    wa: '6281234567890'
+  },
+  {
+    name: 'Anwar Al Madinah Movenpick',
+    city_id: 'Madinah', city_en: 'Madinah',
+    city_cls: 'madinah',
+    stars: 4,
+    dist_id: '150m dari Masjid Nabawi', dist_en: '150m from Masjid Nabawi',
+    desc_id: 'Anwar Al Madinah Movenpick menawarkan keseimbangan sempurna antara lokasi strategis dan harga yang kompetitif. Hotel bintang empat ini sangat populer di kalangan agen umroh karena aksesibilitasnya yang luar biasa ke Masjid Nabawi dan fasilitas yang memadai untuk rombongan.',
+    desc_en: 'Anwar Al Madinah Movenpick offers the perfect balance of strategic location and competitive pricing. This four-star property is highly popular among umrah agencies for its exceptional accessibility to Masjid Nabawi and group-friendly facilities.',
+    rooms: [
+      {type_id:'Standard Room',type_en:'Standard Room',cap_id:'2 tamu · 28m²',cap_en:'2 guests · 28m²'},
+      {type_id:'Superior Room',type_en:'Superior Room',cap_id:'2 tamu · 32m²',cap_en:'2 guests · 32m²'},
+      {type_id:'Deluxe Room',type_en:'Deluxe Room',cap_id:'3 tamu · 40m²',cap_en:'3 guests · 40m²'},
+      {type_id:'Triple Room',type_en:'Triple Room',cap_id:'3 tamu · 36m²',cap_en:'3 guests · 36m²'}
+    ],
+    facs_id: ['Akses Dekat Nabawi','Restoran Halal','Meeting Room','WiFi Gratis','Laundry','Room Service','Antar-Jemput Bandara','Brankas Kamar'],
+    facs_en: ['Near Nabawi Access','Halal Restaurant','Meeting Room','Free WiFi','Laundry','Room Service','Airport Transfer','In-room Safe'],
+    wa: '6281234567890'
+  },
+  {
+    name: 'Al Safwah Royale Orchid',
+    city_id: 'Makkah', city_en: 'Makkah',
+    city_cls: 'makkah',
+    stars: 4,
+    dist_id: '200m dari Masjidil Haram', dist_en: '200m from Masjidil Haram',
+    desc_id: 'Al Safwah Royale Orchid adalah pilihan cerdas untuk agen yang mencari hotel bintang empat dengan lokasi premium di Makkah. Terletak 200 meter dari Masjidil Haram, hotel ini menawarkan kualitas layanan yang konsisten dan kapasitas yang baik untuk menampung rombongan jamaah.',
+    desc_en: 'Al Safwah Royale Orchid is the smart choice for agencies seeking a four-star hotel with a premium Makkah location. Situated 200 meters from Masjidil Haram, it delivers consistent service quality and good capacity for pilgrim groups.',
+    rooms: [
+      {type_id:'Standard Room',type_en:'Standard Room',cap_id:'2 tamu · 26m²',cap_en:'2 guests · 26m²'},
+      {type_id:'Superior Room',type_en:'Superior Room',cap_id:'2 tamu · 32m²',cap_en:'2 guests · 32m²'},
+      {type_id:'Family Room',type_en:'Family Room',cap_id:'4 tamu · 48m²',cap_en:'4 guests · 48m²'},
+      {type_id:'Deluxe Suite',type_en:'Deluxe Suite',cap_id:'3 tamu · 50m²',cap_en:'3 guests · 50m²'}
+    ],
+    facs_id: ['Lokasi Premium Makkah','Restoran Halal','Roof Terrace','WiFi Gratis','Laundry','Concierge','Brankas Kamar','Lift Modern'],
+    facs_en: ['Premium Makkah Location','Halal Restaurant','Roof Terrace','Free WiFi','Laundry','Concierge','In-room Safe','Modern Elevator'],
+    wa: '6281234567890'
+  }
+];
+
+function openHotel(idx){
+  const h = HOTELS[idx];
+  const isID = lang === 'id';
+  const city = isID ? h.city_id : h.city_en;
+  const cls = h.city_cls;
+
+  // head
+  const head = document.getElementById('hmhead');
+  head.className = 'hmhead ' + cls;
+  const badge = document.getElementById('hmbadge');
+  badge.className = 'hmbadge ' + cls;
+  badge.textContent = city;
+  document.getElementById('hmname').textContent = h.name;
+  document.getElementById('hmstars').textContent = '★'.repeat(h.stars) + '☆'.repeat(5-h.stars);
+  document.getElementById('hmdist').textContent = isID ? h.dist_id : h.dist_en;
+
+  // desc
+  document.getElementById('hmdesc').textContent = isID ? h.desc_id : h.desc_en;
+
+  // section labels
+  document.getElementById('hmroom-title').childNodes[0].textContent = isID ? 'Tipe Kamar' : 'Room Types';
+  document.getElementById('hmfac-title').childNodes[0].textContent = isID ? 'Fasilitas Hotel' : 'Hotel Facilities';
+
+  // rooms
+  const roomsEl = document.getElementById('hmrooms');
+  roomsEl.innerHTML = h.rooms.map(r => `
+    <div class="hmroom">
+      <div class="hmroom-type">${isID ? r.type_id : r.type_en}</div>
+      <div class="hmroom-cap">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        ${isID ? r.cap_id : r.cap_en}
+      </div>
+    </div>`).join('');
+
+  // facilities
+  const facsEl = document.getElementById('hmfacs');
+  const facs = isID ? h.facs_id : h.facs_en;
+  facsEl.innerHTML = facs.map(f => `<span class="hmfac">
+    <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg>${f}
+  </span>`).join('');
+
+  // WA
+  const waText = isID ? 'Hubungi via WhatsApp' : 'Contact via WhatsApp';
+  const msg = isID
+    ? `Halo Safa Hotel Network, saya ingin menanyakan ketersediaan dan harga B2B untuk ${h.name}.`
+    : `Hello Safa Hotel Network, I'd like to inquire about B2B availability and rates for ${h.name}.`;
+  document.getElementById('hmwa').href = `https://wa.me/${h.wa}?text=${encodeURIComponent(msg)}`;
+  document.getElementById('hmwa-text').textContent = waText;
+  document.getElementById('hminfo-text').textContent = isID ? 'Minta Penawaran' : 'Request a Quote';
+
+  document.getElementById('hmodal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeHotelBtn(){
+  document.getElementById('hmodal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closeHotel(e){
+  if(e.target !== document.getElementById('hmodal')) return;
+  closeHotelBtn();
+}
+
+// Attach click to hotel cards
+document.querySelectorAll('[data-hotel]').forEach(card => {
+  card.addEventListener('click', function(){
+    openHotel(parseInt(this.dataset.hotel));
+  });
+});
+
+// ESC closes hotel modal too
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape') closeHotelBtn();
+});
+
+// close hotel modal on ESC
+document.addEventListener('keydown',e=>{if(e.key==='Escape') closeHotel();});
+</script>
+</body>
+</html>
