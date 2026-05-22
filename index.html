@@ -75,7 +75,12 @@ h3{font-size:clamp(1.05rem,1.8vw,1.35rem)}
 .nbrand{display:flex;flex-direction:column;line-height:1}
 .nbname{font-family:var(--fh);font-size:1.08rem;font-weight:600;color:#fff;letter-spacing:.01em;margin-bottom:.2rem}
 .nbtag{font-size:.54rem;font-weight:500;color:var(--gold);letter-spacing:.15em;text-transform:uppercase}
-@media(max-width:520px){.nbrand{display:none}}
+@media(max-width:520px){
+  .nlogo img{height:32px;width:32px}
+  .nlogo{gap:.55rem}
+  .nbname{font-size:.82rem}
+  .nbtag{font-size:.46rem;letter-spacing:.1em}
+}
 .nlinks{display:flex;gap:clamp(1rem,2.5vw,2.2rem);list-style:none}
 .nlinks a{font-size:.81rem;font-weight:500;color:rgba(255,255,255,.7);
           letter-spacing:.06em;position:relative;padding-bottom:4px;transition:color .25s}
@@ -810,9 +815,7 @@ h3{font-size:clamp(1.05rem,1.8vw,1.35rem)}
   </div>
   <div class="hgrid">
     <div class="hc" data-r="up" data-tilt data-hotel="0">
-      <div class="hthumb tm"><div class="hthumb-overlay"></div><span class="hb bm">Makkah</span>
-        <svg class="hthumb-icon" width="64" height="64" fill="white" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22" fill="white"/></svg>
-      </div>
+      <div class="hthumb tm" style="background-image:url('https://www.swissotel.com/assets/0/92/2119/6442450958/6442451001/6442451003/6442451029/7913571c-7363-4c0b-83c0-63adeee8b188.jpg');background-size:cover;background-position:center"><div class="hthumb-overlay"></div><span class="hb bm">Makkah</span></div>
       <div class="hbody"><div class="hstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <div class="hname">Swissôtel Makkah</div>
         <div class="hdist"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -820,9 +823,7 @@ h3{font-size:clamp(1.05rem,1.8vw,1.35rem)}
       </div>
     </div>
     <div class="hc" data-r="up" data-tilt style="--d:.08s" data-hotel="1">
-      <div class="hthumb tm"><div class="hthumb-overlay"></div><span class="hb bm">Makkah</span>
-        <svg class="hthumb-icon" width="64" height="64" fill="white" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-      </div>
+      <div class="hthumb tm" style="background-image:url('https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/102/2017/02/03094507/Hotel-from-Outside-Home-page-2-Copier.jpg');background-size:cover;background-position:center"><div class="hthumb-overlay"></div><span class="hb bm">Makkah</span></div>
       <div class="hbody"><div class="hstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <div class="hname">Pullman ZamZam Makkah</div>
         <div class="hdist"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -830,9 +831,7 @@ h3{font-size:clamp(1.05rem,1.8vw,1.35rem)}
       </div>
     </div>
     <div class="hc" data-r="up" data-tilt style="--d:.16s" data-hotel="2">
-      <div class="hthumb td"><div class="hthumb-overlay"></div><span class="hb bd">Madinah</span>
-        <svg class="hthumb-icon" width="64" height="64" fill="white" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-      </div>
+      <div class="hthumb td" style="background-image:url('https://ak-d.tripcdn.com/images/0225a120009cdszvjC9C1_R_960_660_R5_D.jpg');background-size:cover;background-position:center"><div class="hthumb-overlay"></div><span class="hb bd">Madinah</span></div>
       <div class="hbody"><div class="hstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <div class="hname">Marriott Hotel Madinah</div>
         <div class="hdist"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -840,9 +839,7 @@ h3{font-size:clamp(1.05rem,1.8vw,1.35rem)}
       </div>
     </div>
     <div class="hc" data-r="up" data-tilt data-hotel="3">
-      <div class="hthumb tm"><div class="hthumb-overlay"></div><span class="hb bm">Makkah</span>
-        <svg class="hthumb-icon" width="64" height="64" fill="white" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-      </div>
+      <div class="hthumb tm" style="background-image:url('https://www.hilton.com/im/en/MAKSUHI/3210886/maksuhi-exterior-location.jpg');background-size:cover;background-position:center"><div class="hthumb-overlay"></div><span class="hb bm">Makkah</span></div>
       <div class="hbody"><div class="hstars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <div class="hname">Hilton Suites Makkah</div>
         <div class="hdist"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -850,9 +847,7 @@ h3{font-size:clamp(1.05rem,1.8vw,1.35rem)}
       </div>
     </div>
     <div class="hc" data-r="up" data-tilt style="--d:.08s" data-hotel="4">
-      <div class="hthumb td"><div class="hthumb-overlay"></div><span class="hb bd">Madinah</span>
-        <svg class="hthumb-icon" width="64" height="64" fill="white" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-      </div>
+      <div class="hthumb td" style="background-image:url('https://ak-d.tripcdn.com/images/02027120008pzxfeb8946.jpg');background-size:cover;background-position:center"><div class="hthumb-overlay"></div><span class="hb bd">Madinah</span></div>
       <div class="hbody"><div class="hstars">&#9733;&#9733;&#9733;&#9733;</div>
         <div class="hname">Anwar Al Madinah Movenpick</div>
         <div class="hdist"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -860,9 +855,7 @@ h3{font-size:clamp(1.05rem,1.8vw,1.35rem)}
       </div>
     </div>
     <div class="hc" data-r="up" data-tilt style="--d:.16s" data-hotel="5">
-      <div class="hthumb tm"><div class="hthumb-overlay"></div><span class="hb bm">Makkah</span>
-        <svg class="hthumb-icon" width="64" height="64" fill="white" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-      </div>
+      <div class="hthumb tm" style="background-image:url('https://ak-d.tripcdn.com/images/0226s12000oth80j62DDA.jpg');background-size:cover;background-position:center"><div class="hthumb-overlay"></div><span class="hb bm">Makkah</span></div>
       <div class="hbody"><div class="hstars">&#9733;&#9733;&#9733;&#9733;</div>
         <div class="hname">Al Safwah Royale Orchid</div>
         <div class="hdist"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -1138,6 +1131,7 @@ h3{font-size:clamp(1.05rem,1.8vw,1.35rem)}
       <button class="lmodal-close" onclick="closeLegal()" aria-label="Tutup">&#x2715;</button>
     </div>
     <div class="lmodal-body">
+      <div class="lm-id">
       <h3>1. Penerimaan Syarat</h3>
       <p>Dengan mengakses layanan Safa Hotel Network, Anda sebagai mitra agen travel menyatakan telah membaca, memahami, dan menyetujui seluruh syarat dan ketentuan yang tercantum dalam dokumen ini. Jika Anda tidak menyetujui salah satu ketentuan, harap tidak menggunakan layanan kami.</p>
 
@@ -1176,8 +1170,51 @@ h3{font-size:clamp(1.05rem,1.8vw,1.35rem)}
 
       <h3>11. Perubahan Ketentuan</h3>
       <p>Safa Hotel Network berhak mengubah syarat dan ketentuan ini sewaktu-waktu dengan pemberitahuan tertulis kepada mitra minimal 30 hari sebelumnya. Penggunaan layanan setelah tanggal berlakunya perubahan dianggap sebagai persetujuan atas ketentuan baru.</p>
+      </div>
+
+      <div class="lm-en" style="display:none">
+      <h3>1. Acceptance of Terms</h3>
+      <p>By accessing Safa Hotel Network services, you as a travel agency partner confirm that you have read, understood, and agreed to all terms and conditions stated in this document. If you do not agree to any of these terms, please do not use our services.</p>
+
+      <h3>2. Service Definition</h3>
+      <p>Safa Hotel Network is a B2B platform connecting registered Indonesian umrah and hajj travel agencies with a network of partner hotels in Makkah and Madinah. Services include: hotel rate negotiation, room allocation, operational support, and access to an exclusive property portfolio.</p>
+
+      <h3>3. Partnership Requirements</h3>
+      <p>To become an official Safa Hotel Network partner, travel agencies must meet the following requirements:</p>
+      <ul>
+        <li>Hold a valid tourism business license (TDUP/NIB) from the relevant authority.</li>
+        <li>Be registered as an umrah pilgrimage organizer with the Indonesian Ministry of Religious Affairs (PPIU).</li>
+        <li>Sign a Cooperation Agreement (PKS) with Safa Hotel Network.</li>
+        <li>Meet the minimum booking volume requirements set periodically.</li>
+      </ul>
+
+      <h3>4. Booking and Confirmation</h3>
+      <p>All hotel bookings are made through officially agreed channels (email, system, or direct communication with our team). A booking is considered valid upon receipt of written confirmation from Safa Hotel Network along with a reference number. Room availability is dynamic and cannot be guaranteed until written confirmation is received.</p>
+
+      <h3>5. Rates and Payment</h3>
+      <p>The hotel rates we offer are exclusive net B2B partner rates and are confidential. Partners are prohibited from publishing these rates to third parties without written permission. Payment is made according to the schedule stated in the Cooperation Agreement. Late payment may result in booking cancellation and penalties as stipulated.</p>
+
+      <h3>6. Cancellation and Refund</h3>
+      <p>Cancellation policies follow the terms of each partner hotel and may vary based on season, room type, and cancellation timing. Cancellation requests must be submitted in writing. Refunds (if applicable) are processed within 14–30 business days after cancellation is confirmed, subject to applicable cancellation fees.</p>
+
+      <h3>7. Partner Rights and Obligations</h3>
+      <p>Partners are entitled to: competitive rates, operational support, and access to the latest property information. Partners are obligated to: provide accurate pilgrim information, comply with payment deadlines, and not use Safa Hotel Network branding or materials without permission.</p>
+
+      <h3>8. Limitation of Liability</h3>
+      <p>Safa Hotel Network is not liable for losses arising from force majeure events (natural disasters, government policy, pandemic, etc.), service failures by partner hotels beyond our control, or inaccurate information provided by partners. Our total liability is limited to the value of the affected transaction.</p>
+
+      <h3>9. Confidentiality</h3>
+      <p>Both parties agree to maintain the confidentiality of business information, rates, and operational data obtained in the course of cooperation. This confidentiality obligation applies during the cooperation period and for 2 (two) years thereafter.</p>
+
+      <h3>10. Dispute Resolution</h3>
+      <p>Any disputes arising from this cooperation will first be resolved through deliberation. If no agreement is reached within 30 days, the dispute will be resolved through the Indonesian National Arbitration Board (BANI) in Jakarta in accordance with applicable regulations.</p>
+
+      <h3>11. Changes to Terms</h3>
+      <p>Safa Hotel Network reserves the right to amend these terms and conditions at any time with written notice to partners at least 30 days in advance. Continued use of the service after the effective date of changes constitutes acceptance of the new terms.</p>
+      </div>
     </div>
-    <div class="lmodal-foot">Berlaku sejak 1 Januari 2025 &nbsp;·&nbsp; Safa Hotel Network &nbsp;·&nbsp; Jakarta, Indonesia</div>
+    <div class="lmodal-foot lm-id">Berlaku sejak 1 Januari 2025 &nbsp;·&nbsp; Safa Hotel Network &nbsp;·&nbsp; Jakarta, Indonesia</div>
+    <div class="lmodal-foot lm-en" style="display:none">Effective 1 January 2025 &nbsp;·&nbsp; Safa Hotel Network &nbsp;·&nbsp; Jakarta, Indonesia</div>
   </div>
 </div>
 
@@ -1190,6 +1227,7 @@ h3{font-size:clamp(1.05rem,1.8vw,1.35rem)}
       <button class="lmodal-close" onclick="closeLegal()" aria-label="Tutup">&#x2715;</button>
     </div>
     <div class="lmodal-body">
+      <div class="lm-id">
       <h3>1. Pendahuluan</h3>
       <p>Safa Hotel Network berkomitmen melindungi privasi seluruh mitra dan pengguna layanan kami. Kebijakan Privasi ini menjelaskan jenis data yang kami kumpulkan, cara penggunaannya, dan hak-hak Anda atas data tersebut. Dengan menggunakan layanan kami, Anda menyetujui praktik yang diuraikan dalam kebijakan ini.</p>
 
@@ -1248,8 +1286,71 @@ h3{font-size:clamp(1.05rem,1.8vw,1.35rem)}
 
       <h3>11. Hubungi Kami</h3>
       <p>Jika Anda memiliki pertanyaan tentang kebijakan privasi ini atau cara kami mengelola data Anda, silakan hubungi tim Privacy kami melalui <strong>privacy@safagroup.id</strong> atau kirimkan surat ke alamat kantor kami di Jakarta Selatan, Indonesia.</p>
+      </div>
+
+      <div class="lm-en" style="display:none">
+      <h3>1. Introduction</h3>
+      <p>Safa Hotel Network is committed to protecting the privacy of all our partners and service users. This Privacy Policy explains the types of data we collect, how we use it, and your rights over that data. By using our services, you agree to the practices described in this policy.</p>
+
+      <h3>2. Data We Collect</h3>
+      <p>We collect data in two main categories:</p>
+      <ul>
+        <li><strong>Business identity data:</strong> company name, business license number, tax ID (NPWP), office address, and contact information of the person in charge.</li>
+        <li><strong>Operational data:</strong> pilgrim names, travel dates, room preferences, and other booking information required to process reservations.</li>
+        <li><strong>Communication data:</strong> email messages, conversation logs, and meeting notes related to the cooperation.</li>
+        <li><strong>Technical data:</strong> IP address, browser type, and website usage data (collected anonymously via analytics).</li>
+      </ul>
+
+      <h3>3. How We Use Data</h3>
+      <p>The data collected is used for the following purposes:</p>
+      <ul>
+        <li>Processing hotel bookings and reservation confirmations.</li>
+        <li>Communicating with partners regarding operations, offers, and service updates.</li>
+        <li>Fulfilling legal obligations and tax reporting requirements.</li>
+        <li>Improving service quality and product development.</li>
+        <li>Sending promotional information and exclusive offers (opt-out available at any time).</li>
+      </ul>
+
+      <h3>4. Legal Basis for Processing</h3>
+      <p>Your data is processed based on: execution of the cooperation agreement (PKS), applicable legal obligations in Indonesia (Personal Data Protection Law No. 27 of 2022), legitimate business interests, and your explicit consent for marketing communications.</p>
+
+      <h3>5. Sharing Data with Third Parties</h3>
+      <p>We do not sell your data. Data may be shared with third parties only in the following circumstances:</p>
+      <ul>
+        <li><strong>Partner hotels:</strong> pilgrim data required for check-in and room service processes.</li>
+        <li><strong>Technology service providers:</strong> email platforms, CRM systems, and analytics tools bound by confidentiality agreements with us.</li>
+        <li><strong>Legal authorities:</strong> when required by applicable laws and regulations.</li>
+      </ul>
+
+      <h3>6. Data Security</h3>
+      <p>We implement appropriate technical and organizational security measures to protect your data, including data encryption in transit (SSL/TLS), role-based access controls, and security incident response procedures. However, no system is entirely risk-free — we encourage you to keep your account credentials confidential.</p>
+
+      <h3>7. Data Retention</h3>
+      <p>Active partner data is retained for the duration of the cooperation. After the cooperation ends, operational data is retained for 5 (five) years in accordance with Indonesian tax regulations. Data that is no longer needed will be securely deleted or anonymized.</p>
+
+      <h3>8. Your Data Rights</h3>
+      <p>Under applicable data protection regulations, you have the right to:</p>
+      <ul>
+        <li>Access your personal data that we hold.</li>
+        <li>Request correction of inaccurate data.</li>
+        <li>Request deletion of data under certain conditions.</li>
+        <li>Withdraw consent for marketing communications at any time.</li>
+        <li>Lodge a complaint with the competent data protection authority.</li>
+      </ul>
+      <p>To exercise these rights, contact us at <strong>privacy@safagroup.id</strong>.</p>
+
+      <h3>9. Cookies and Analytics</h3>
+      <p>Our website uses technical cookies necessary for basic functionality and anonymous analytics cookies to understand usage patterns. You can manage cookie preferences through your browser settings. Disabling cookies may affect site functionality.</p>
+
+      <h3>10. Policy Changes</h3>
+      <p>We may update this privacy policy from time to time. Significant changes will be communicated via email or a notice on our website. The date of the last update will always be displayed at the bottom of this document.</p>
+
+      <h3>11. Contact Us</h3>
+      <p>If you have questions about this privacy policy or how we manage your data, please contact our Privacy team at <strong>privacy@safagroup.id</strong> or write to our office address in South Jakarta, Indonesia.</p>
+      </div>
     </div>
-    <div class="lmodal-foot">Terakhir diperbarui: 1 Januari 2025 &nbsp;·&nbsp; Safa Hotel Network &nbsp;·&nbsp; Jakarta, Indonesia</div>
+    <div class="lmodal-foot lm-id">Terakhir diperbarui: 1 Januari 2025 &nbsp;·&nbsp; Safa Hotel Network &nbsp;·&nbsp; Jakarta, Indonesia</div>
+    <div class="lmodal-foot lm-en" style="display:none">Last updated: 1 January 2025 &nbsp;·&nbsp; Safa Hotel Network &nbsp;·&nbsp; Jakarta, Indonesia</div>
   </div>
 </div>
 
@@ -1280,6 +1381,8 @@ function setLang(l){
   document.querySelectorAll('[data-id]').forEach(el=>{
     const v=el.dataset[l]; if(v!==undefined) el.textContent=v;
   });
+  document.querySelectorAll('.lm-id').forEach(el=>el.style.display=l==='id'?'':'none');
+  document.querySelectorAll('.lm-en').forEach(el=>el.style.display=l==='en'?'':'none');
 }
 
 // ── NAVBAR ──
@@ -1353,21 +1456,22 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',
   if(!c)return;
   const ctx=c.getContext('2d');
   let W,H,t=0,rotY=0;
-  const TILT=0.26;
+  const TILT=0.21;
 
   function resize(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight;}
   resize();
   window.addEventListener('resize',resize,{passive:true});
 
+  let _fov,_dist,_cx,_cy;
+
   function proj(x,y,z){
     const rx= x*Math.cos(rotY)+z*Math.sin(rotY);
-    let   rz=-x*Math.sin(rotY)+z*Math.cos(rotY);
+    const rz=-x*Math.sin(rotY)+z*Math.cos(rotY);
     const ry2= y*Math.cos(TILT)+rz*Math.sin(TILT);
     const rz2=-y*Math.sin(TILT)+rz*Math.cos(TILT);
     const sc=_fov/(rz2+_dist);
     return{sx:_cx+rx*sc, sy:_cy+ry2*sc, z:rz2, sc};
   }
-  let _fov,_dist,_cx,_cy;
 
   function bl(Q,u,v){
     const T={sx:Q[0].sx+(Q[1].sx-Q[0].sx)*u, sy:Q[0].sy+(Q[1].sy-Q[0].sy)*u};
@@ -1386,190 +1490,355 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',
           -(P[i1].sy-P[i0].sy)*(P[i3].sx-P[i0].sx);
   }
 
+  // Fill a polygon path solidly (double-fill to eliminate any edge gap)
+  function solidFill(P,idx,color){
+    polyPath(P,idx);
+    ctx.fillStyle=color;
+    ctx.fill();
+    ctx.fill(); // second fill closes any sub-pixel gap
+  }
+
   function draw(){
     W=c.width; H=c.height;
     ctx.clearRect(0,0,W,H);
+    ctx.globalAlpha=1;
+    ctx.globalCompositeOperation='source-over';
 
-    _cx=W*.5; _cy=H*.48;
-    const sz=Math.min(W,H)*.24;
-    _fov=sz*2.8; _dist=sz*3.4;
+    _cx=W*.52; _cy=H*.46;
+    const sz=Math.min(W,H)*.21;
+    _fov=sz*3.1; _dist=sz*4.0;
 
-    const hw=sz, hd=sz*.88, hh=sz*1.14;
-    _cy+=Math.sin(t*.5)*sz*.015;
+    const hw=sz*1.15, hd=sz*1.0, hh=sz*1.35;
+    _cy+=Math.sin(t*.44)*sz*.011;
 
+    // 8 vertices (0-3 top, 4-7 bottom)
     const V=[
       [-hw,-hh, hd],[ hw,-hh, hd],[ hw,-hh,-hd],[-hw,-hh,-hd],
       [-hw, hh, hd],[ hw, hh, hd],[ hw, hh,-hd],[-hw, hh,-hd],
     ];
     const P=V.map(([x,y,z])=>proj(x,y,z));
 
+    // Shadharwan base vertices (slightly wider)
+    const bw=hw*1.055, bd=hd*1.055, by=hh*0.78;
+    const VB=[
+      [-bw,by,bd],[ bw,by,bd],[ bw,by,-bd],[-bw,by,-bd],
+      [-bw,hh,bd],[ bw,hh,bd],[ bw,hh,-bd],[-bw,hh,-bd],
+    ];
+    const PB=VB.map(([x,y,z])=>proj(x,y,z));
+
     const FACES=[
-      {i:[3,2,1,0], n:'top'},
-      {i:[0,1,5,4], n:'front'},
-      {i:[1,2,6,5], n:'right'},
-      {i:[3,0,4,7], n:'left'},
-      {i:[2,3,7,6], n:'back'},
+      {i:[3,2,1,0],n:'top'},
+      {i:[0,1,5,4],n:'front'},
+      {i:[1,2,6,5],n:'right'},
+      {i:[3,0,4,7],n:'left'},
+      {i:[2,3,7,6],n:'back'},
+    ];
+    const BFACES=[
+      {i:[0,1,5,4],n:'bf'},{i:[1,2,6,5],n:'br'},
+      {i:[3,0,4,7],n:'bl'},{i:[2,3,7,6],n:'bb'},
     ];
 
     const vis=FACES
       .filter(f=>cross(P,f.i[0],f.i[1],f.i[3])>0)
-      .sort((a,b)=>
-        b.i.reduce((s,i)=>s+P[i].z,0)-a.i.reduce((s,i)=>s+P[i].z,0)
-      );
+      .sort((a,b)=>b.i.reduce((s,i)=>s+P[i].z,0)-a.i.reduce((s,i)=>s+P[i].z,0));
 
-    // Outer gold halo
-    const halo=ctx.createRadialGradient(_cx,_cy,sz*.2,_cx,_cy,sz*2.5);
-    halo.addColorStop(0,'rgba(219,146,0,.12)');
-    halo.addColorStop(.4,'rgba(219,146,0,.04)');
+    const visB=BFACES
+      .filter(f=>cross(PB,f.i[0],f.i[1],f.i[3])>0)
+      .sort((a,b)=>b.i.reduce((s,i)=>s+PB[i].z,0)-a.i.reduce((s,i)=>s+PB[i].z,0));
+
+    const faceNames=new Set(vis.map(f=>f.n));
+
+    // ── AMBIENT GLOW ──
+    const halo=ctx.createRadialGradient(_cx,_cy,sz*.3,_cx,_cy,sz*3.0);
+    halo.addColorStop(0,'rgba(219,146,0,.09)');
+    halo.addColorStop(.5,'rgba(219,146,0,.03)');
     halo.addColorStop(1,'transparent');
-    ctx.beginPath();ctx.arc(_cx,_cy,sz*2.5,0,Math.PI*2);
+    ctx.beginPath();ctx.arc(_cx,_cy,sz*3.0,0,Math.PI*2);
     ctx.fillStyle=halo;ctx.fill();
 
+    // ── GROUND SHADOW ──
+    const bots=[P[4],P[5],P[6],P[7]];
+    const gx=bots.reduce((s,p)=>s+p.sx,0)/4;
+    const gy=Math.max(...bots.map(p=>p.sy))+sz*.05;
+    const gr=hw*(_fov/_dist)*1.15;
+    const sg=ctx.createRadialGradient(gx,gy,0,gx,gy,gr);
+    sg.addColorStop(0,'rgba(219,146,0,.09)');sg.addColorStop(1,'transparent');
+    ctx.beginPath();ctx.ellipse(gx,gy,gr,gr*.08,0,0,Math.PI*2);
+    ctx.fillStyle=sg;ctx.fill();
+
+    // ── SHADHARWAN (marble base) ──
+    visB.forEach(f=>{
+      solidFill(PB,f.i,'#1c1912');
+      const QB=[PB[f.i[0]],PB[f.i[1]],PB[f.i[2]],PB[f.i[3]]];
+      for(let vi=1;vi<5;vi++){
+        const L=bl(QB,.02,vi/5), R=bl(QB,.98,vi/5);
+        ctx.beginPath();ctx.moveTo(L.sx,L.sy);ctx.lineTo(R.sx,R.sy);
+        ctx.strokeStyle='rgba(160,140,100,.10)';ctx.lineWidth=.5;ctx.stroke();
+      }
+      polyPath(PB,f.i);
+      ctx.strokeStyle='rgba(200,170,110,.20)';ctx.lineWidth=.9;ctx.stroke();
+    });
+
+    // ── SOLID HULL BASE (prevents seam gaps showing background) ──
+    {const hi=[...new Set(vis.flatMap(f=>f.i))];
+    const hp=hi.map(i=>P[i]);
+    const hox=hp.reduce((s,p)=>s+p.sx,0)/hp.length;
+    const hoy=hp.reduce((s,p)=>s+p.sy,0)/hp.length;
+    hp.sort((a,b)=>Math.atan2(a.sy-hoy,a.sx-hox)-Math.atan2(b.sy-hoy,b.sx-hox));
+    ctx.beginPath();hp.forEach((p,j)=>j?ctx.lineTo(p.sx,p.sy):ctx.moveTo(p.sx,p.sy));
+    ctx.closePath();ctx.fillStyle='#0e0c10';ctx.fill();}
+
+    // ── MAIN KA'BAH FACES ──
     vis.forEach(f=>{
       const [i0,i1,i2,i3]=f.i;
       const Q=[P[i0],P[i1],P[i2],P[i3]];
       const isTop=f.n==='top', isFront=f.n==='front';
+      const isRight=f.n==='right', isLeft=f.n==='left';
 
-      // Face fill — navy (readable against dark bg)
-      polyPath(P,f.i);
-      ctx.fillStyle= isTop ? '#12203e' : isFront ? '#0f1c38' : '#0b1530';
-      ctx.fill();
+      // ── STEP 1: SOLID OPAQUE KISWAH FILL ──
+      // Colours are clearly distinguishable from the dark-navy hero background.
+      // Top face: dark slate (sky reflection). Side faces: near-black with warm tint.
+      const baseColor= isTop   ? '#1a2235'
+                     : isFront ? '#181215'   // warm dark — visible vs navy bg
+                     : '#100e12';            // side shadow
+      solidFill(P,f.i,baseColor);
 
+      // ── STEP 2: VERTICAL CLOTH TEXTURE (no clip needed) ──
       if(!isTop){
-        // Kiswah Hizam band (top 27% of side faces)
-        const bBL=bl(Q,0,.27), bBR=bl(Q,1,.27);
-
-        // Belt fill (lighter tint)
-        ctx.beginPath();
-        ctx.moveTo(Q[0].sx,Q[0].sy); ctx.lineTo(Q[1].sx,Q[1].sy);
-        ctx.lineTo(bBR.sx,bBR.sy);   ctx.lineTo(bBL.sx,bBL.sy);
-        ctx.closePath();
-        ctx.fillStyle='#162440';ctx.fill();
-
-        // Belt bottom edge: wide glow + mid + crisp
-        for(const [a,lw] of [[.15,16],[.42,5],[.78,1.6]]){
-          ctx.beginPath();ctx.moveTo(bBL.sx,bBL.sy);ctx.lineTo(bBR.sx,bBR.sy);
-          ctx.strokeStyle=`rgba(240,168,0,${a})`;ctx.lineWidth=lw;ctx.stroke();
-        }
-        // Shimmer
-        ctx.beginPath();ctx.moveTo(bBL.sx,bBL.sy);ctx.lineTo(bBR.sx,bBR.sy);
-        ctx.strokeStyle=`rgba(255,218,100,${.3+Math.sin(t*.4)*.1})`;ctx.lineWidth=.7;ctx.stroke();
-
-        // Belt top edge (subtle)
-        ctx.beginPath();ctx.moveTo(Q[0].sx,Q[0].sy);ctx.lineTo(Q[1].sx,Q[1].sy);
-        ctx.strokeStyle='rgba(240,168,0,.22)';ctx.lineWidth=1;ctx.stroke();
-
-        // Arabic calligraphy dashes inside belt
-        for(let d=0;d<8;d++){
-          const u0=.04+d*.115, u1=u0+.07;
-          const vy=.08+Math.sin(d*1.4)*.06;
-          const pa=bl(Q,u0,vy), pb=bl(Q,u1,vy);
-          ctx.beginPath();ctx.moveTo(pa.sx,pa.sy);ctx.lineTo(pb.sx,pb.sy);
-          ctx.strokeStyle='rgba(219,146,0,.30)';ctx.lineWidth=1;ctx.stroke();
+        // Draw lines over the entire canvas then they're clipped visually by
+        // the opaque fills drawn afterwards. We keep them very subtle.
+        for(let ti=1;ti<16;ti++){
+          const u=ti/16;
+          const tp=bl(Q,u,.04), bp=bl(Q,u,.97);
+          ctx.beginPath();ctx.moveTo(tp.sx,tp.sy);ctx.lineTo(bp.sx,bp.sy);
+          ctx.strokeStyle='rgba(0,0,0,.30)';ctx.lineWidth=.4;ctx.stroke();
         }
       }
 
-      // Face outline — gold wireframe
-      polyPath(P,f.i);
-      ctx.strokeStyle='rgba(219,146,0,.16)';ctx.lineWidth=10;ctx.stroke();
-      ctx.strokeStyle='rgba(240,168,0,.65)';ctx.lineWidth=1.4;ctx.stroke();
-
-      if(isFront){
-        // Door: centred, u 0.34-0.66, v 0.26-0.83
-        const dTL=bl(Q,.34,.26), dTR=bl(Q,.66,.26);
-        const dBL=bl(Q,.34,.83), dBR=bl(Q,.66,.83);
-        const da=.80+Math.sin(t*.5)*.12;
-
-        // Door fill
-        ctx.beginPath();
-        ctx.moveTo(dTL.sx,dTL.sy);ctx.lineTo(dTR.sx,dTR.sy);
-        ctx.lineTo(dBR.sx,dBR.sy);ctx.lineTo(dBL.sx,dBL.sy);
-        ctx.closePath();
-        ctx.fillStyle='#080e1c';ctx.fill();
-
-        // Door frame layers
-        for(const [a,lw] of [[da*.16,14],[da*.40,4],[da,1.8]]){
-          ctx.beginPath();
-          ctx.moveTo(dTL.sx,dTL.sy);ctx.lineTo(dTR.sx,dTR.sy);
-          ctx.lineTo(dBR.sx,dBR.sy);ctx.lineTo(dBL.sx,dBL.sy);
-          ctx.closePath();
-          ctx.strokeStyle=`rgba(240,168,0,${a})`;ctx.lineWidth=lw;ctx.stroke();
-        }
-
-        // Arch above door
-        const archH=(dBL.sy-dTL.sy)*.15;
-        const aM={sx:(dTL.sx+dTR.sx)*.5, sy:(dTL.sy+dTR.sy)*.5-archH};
-        ctx.beginPath();ctx.moveTo(dTL.sx,dTL.sy);
-        ctx.quadraticCurveTo(aM.sx,aM.sy,dTR.sx,dTR.sy);
-        ctx.strokeStyle=`rgba(255,210,90,${da*.9})`;ctx.lineWidth=1.6;ctx.stroke();
-
-        // Vertical + horizontal dividers
-        const dMT={sx:(dTL.sx+dTR.sx)*.5,sy:(dTL.sy+dTR.sy)*.5};
-        const dMB={sx:(dBL.sx+dBR.sx)*.5,sy:(dBL.sy+dBR.sy)*.5};
-        ctx.beginPath();ctx.moveTo(dMT.sx,dMT.sy);ctx.lineTo(dMB.sx,dMB.sy);
-        ctx.strokeStyle=`rgba(240,168,0,${da*.32})`;ctx.lineWidth=.9;ctx.stroke();
-        const mL={sx:(dTL.sx+dBL.sx)*.5,sy:(dTL.sy+dBL.sy)*.5};
-        const mR={sx:(dTR.sx+dBR.sx)*.5,sy:(dTR.sy+dBR.sy)*.5};
-        ctx.beginPath();ctx.moveTo(mL.sx,mL.sy);ctx.lineTo(mR.sx,mR.sy);
-        ctx.strokeStyle=`rgba(240,168,0,${da*.28})`;ctx.lineWidth=.9;ctx.stroke();
-
-        // Step below door
-        const sTL=bl(Q,.28,.83),sTR=bl(Q,.72,.83);
-        const sBL=bl(Q,.28,.94),sBR=bl(Q,.72,.94);
-        ctx.beginPath();
-        ctx.moveTo(sTL.sx,sTL.sy);ctx.lineTo(sTR.sx,sTR.sy);
-        ctx.lineTo(sBR.sx,sBR.sy);ctx.lineTo(sBL.sx,sBL.sy);
-        ctx.closePath();
-        ctx.fillStyle='#0d1a32';ctx.fill();
-        ctx.strokeStyle=`rgba(240,168,0,${da*.50})`;ctx.lineWidth=1.1;ctx.stroke();
-
-        // Hajar al-Aswad (black stone, right corner at ~55% height)
-        const hj=bl(Q,1,.54);
-        ctx.beginPath();ctx.arc(hj.sx,hj.sy,sz*.045,0,Math.PI*2);
-        ctx.fillStyle='#050a14';ctx.fill();
-        ctx.strokeStyle='rgba(240,168,0,.72)';ctx.lineWidth=1.3;ctx.stroke();
-        ctx.beginPath();ctx.arc(hj.sx,hj.sy,sz*.022,0,Math.PI*2);
-        ctx.fillStyle='#1a1008';ctx.fill();
+      // ── STEP 3: FACE SHADING GRADIENT (gives depth) ──
+      if(!isTop){
+        // Subtle top-to-bottom gradient: slightly brighter at top
+        const grad=ctx.createLinearGradient(
+          (Q[0].sx+Q[1].sx)*.5, (Q[0].sy+Q[1].sy)*.5,
+          (Q[3].sx+Q[2].sx)*.5, (Q[3].sy+Q[2].sy)*.5
+        );
+        grad.addColorStop(0,'rgba(255,255,255,.04)');
+        grad.addColorStop(.4,'rgba(255,255,255,.01)');
+        grad.addColorStop(1,'rgba(0,0,0,.06)');
+        polyPath(P,f.i);
+        ctx.fillStyle=grad;ctx.fill();
       }
 
+      // ── STEP 4: HIZAM BELT ──
+      if(!isTop){
+        const bv1=0.19, bv2=0.36;
+        const bTL=bl(Q,0,bv1), bTR=bl(Q,1,bv1);
+        const bBL=bl(Q,0,bv2), bBR=bl(Q,1,bv2);
+        const shimmer=Math.sin(t*.5)*.06;
+
+        // Belt solid background
+        ctx.beginPath();
+        ctx.moveTo(bTL.sx,bTL.sy);ctx.lineTo(bTR.sx,bTR.sy);
+        ctx.lineTo(bBR.sx,bBR.sy);ctx.lineTo(bBL.sx,bBL.sy);
+        ctx.closePath();
+        ctx.fillStyle='#0e0800';ctx.fill();
+
+        // Belt gold gradient
+        const bg=ctx.createLinearGradient(bTL.sx,bTL.sy,bBL.sx,bBL.sy);
+        bg.addColorStop(0,`rgba(219,146,0,${.30+shimmer})`);
+        bg.addColorStop(.5,`rgba(180,110,0,${.18+shimmer})`);
+        bg.addColorStop(1,`rgba(219,146,0,${.30+shimmer})`);
+        ctx.beginPath();
+        ctx.moveTo(bTL.sx,bTL.sy);ctx.lineTo(bTR.sx,bTR.sy);
+        ctx.lineTo(bBR.sx,bBR.sy);ctx.lineTo(bBL.sx,bBL.sy);
+        ctx.closePath();
+        ctx.fillStyle=bg;ctx.fill();
+
+        // Calligraphy dashes
+        const nD=11;
+        for(let d=0;d<nD;d++){
+          const u0=.025+d*(.95/nD), u1=u0+(.95/nD)*(.5+(d%3)*.15);
+          const vm1=bv1+(bv2-bv1)*(.30+Math.sin(d*1.7)*.14);
+          const vm2=bv1+(bv2-bv1)*(.68+Math.cos(d*1.3)*.13);
+          const opa=.55+Math.sin(d*.8+t*.28)*.13;
+          [[vm1,1.1],[vm2,.75]].forEach(([vm,lw])=>{
+            const pa=bl(Q,u0,vm), pb=bl(Q,Math.min(u1,.975),vm);
+            ctx.beginPath();ctx.moveTo(pa.sx,pa.sy);ctx.lineTo(pb.sx,pb.sy);
+            ctx.strokeStyle=`rgba(255,210,70,${opa})`;ctx.lineWidth=lw;ctx.stroke();
+          });
+        }
+
+        // Belt top & bottom border lines
+        [[bTL,bTR],[bBL,bBR]].forEach(([L,R])=>{
+          ctx.beginPath();ctx.moveTo(L.sx,L.sy);ctx.lineTo(R.sx,R.sy);
+          ctx.strokeStyle=`rgba(255,200,30,${.18+shimmer})`;ctx.lineWidth=10;ctx.stroke();
+          ctx.beginPath();ctx.moveTo(L.sx,L.sy);ctx.lineTo(R.sx,R.sy);
+          ctx.strokeStyle=`rgba(255,225,80,${.92+shimmer})`;ctx.lineWidth=1.6;ctx.stroke();
+        });
+      }
+
+      // ── STEP 5: TOP FACE — Mizab al-Rahma ──
       if(isTop){
-        // Subtle diagonal lines show flat rooftop
+        const mTL=bl(Q,.40,.08), mTR=bl(Q,.60,.08);
+        const mBL=bl(Q,.40,.24), mBR=bl(Q,.60,.24);
+        ctx.beginPath();
+        ctx.moveTo(mTL.sx,mTL.sy);ctx.lineTo(mTR.sx,mTR.sy);
+        ctx.lineTo(mBR.sx,mBR.sy);ctx.lineTo(mBL.sx,mBL.sy);
+        ctx.closePath();
+        ctx.fillStyle='#5a3c00';ctx.fill();
+        ctx.strokeStyle='rgba(255,210,50,.82)';ctx.lineWidth=1.4;ctx.stroke();
         [[0,0,1,1],[1,0,0,1]].forEach(([u0,v0,u1,v1])=>{
           const a=bl(Q,u0,v0), b=bl(Q,u1,v1);
           ctx.beginPath();ctx.moveTo(a.sx,a.sy);ctx.lineTo(b.sx,b.sy);
-          ctx.strokeStyle='rgba(219,146,0,.10)';ctx.lineWidth=1;ctx.stroke();
+          ctx.strokeStyle='rgba(219,146,0,.08)';ctx.lineWidth=.8;ctx.stroke();
         });
+      }
+
+      // ── STEP 6: FACE EDGE OUTLINE ──
+      polyPath(P,f.i);
+      ctx.strokeStyle='rgba(219,146,0,.10)';ctx.lineWidth=9;ctx.stroke();
+      ctx.strokeStyle='rgba(240,168,0,.52)';ctx.lineWidth=1.2;ctx.stroke();
+
+      // ── STEP 7: DOOR (front face only) ──
+      if(isFront){
+        const da=.82+Math.sin(t*.44)*.11;
+
+        // Outer ornate frame
+        const fTL=bl(Q,.26,.22), fTR=bl(Q,.74,.22);
+        const fBL=bl(Q,.26,.82), fBR=bl(Q,.74,.82);
+        const farch=(fBL.sy-fTL.sy)*.22;
+        const fam={sx:(fTL.sx+fTR.sx)*.5, sy:(fTL.sy+fTR.sy)*.5-farch};
+        ctx.beginPath();
+        ctx.moveTo(fBL.sx,fBL.sy);ctx.lineTo(fTL.sx,fTL.sy);
+        ctx.quadraticCurveTo(fam.sx,fam.sy,fTR.sx,fTR.sy);
+        ctx.lineTo(fBR.sx,fBR.sy);ctx.closePath();
+        ctx.fillStyle='#2d1800';ctx.fill();
+        ctx.strokeStyle=`rgba(255,210,50,${da*.50})`;ctx.lineWidth=8;ctx.stroke();
+        ctx.strokeStyle=`rgba(255,220,70,${da*.88})`;ctx.lineWidth=1.5;ctx.stroke();
+
+        // Inner door panel
+        const du1=.31,du2=.69,dv1=.27,dv2=.80;
+        const dTL=bl(Q,du1,dv1),dTR=bl(Q,du2,dv1);
+        const dBL=bl(Q,du1,dv2),dBR=bl(Q,du2,dv2);
+        const archH=(dBL.sy-dTL.sy)*.20;
+        const aM={sx:(dTL.sx+dTR.sx)*.5, sy:(dTL.sy+dTR.sy)*.5-archH};
+
+        // Panel fill — solid dark first, then gold gradient
+        ctx.beginPath();
+        ctx.moveTo(dBL.sx,dBL.sy);ctx.lineTo(dTL.sx,dTL.sy);
+        ctx.quadraticCurveTo(aM.sx,aM.sy,dTR.sx,dTR.sy);
+        ctx.lineTo(dBR.sx,dBR.sy);ctx.closePath();
+        ctx.fillStyle='#1c0e00';ctx.fill(); // solid warm dark base
+
+        const shimmer2=Math.sin(t*.48)*.035;
+        const dGrad=ctx.createLinearGradient(dTL.sx,dTL.sy,dTR.sx,dTR.sy);
+        dGrad.addColorStop(0,`rgba(65,42,3,${.92+shimmer2})`);
+        dGrad.addColorStop(.22,`rgba(168,118,12,${.94+shimmer2})`);
+        dGrad.addColorStop(.5,`rgba(212,158,20,${.97+shimmer2})`);
+        dGrad.addColorStop(.78,`rgba(168,118,12,${.94+shimmer2})`);
+        dGrad.addColorStop(1,`rgba(65,42,3,${.92+shimmer2})`);
+        ctx.beginPath();
+        ctx.moveTo(dBL.sx,dBL.sy);ctx.lineTo(dTL.sx,dTL.sy);
+        ctx.quadraticCurveTo(aM.sx,aM.sy,dTR.sx,dTR.sy);
+        ctx.lineTo(dBR.sx,dBR.sy);ctx.closePath();
+        ctx.fillStyle=dGrad;ctx.fill();
+
+        // Arch outline
+        ctx.beginPath();ctx.moveTo(dTL.sx,dTL.sy);
+        ctx.quadraticCurveTo(aM.sx,aM.sy,dTR.sx,dTR.sy);
+        ctx.strokeStyle=`rgba(255,220,60,${da*.90})`;ctx.lineWidth=1.6;ctx.stroke();
+
+        // Door frame sides + bottom
+        ctx.beginPath();
+        ctx.moveTo(dTL.sx,dTL.sy);ctx.lineTo(dBL.sx,dBL.sy);
+        ctx.lineTo(dBR.sx,dBR.sy);ctx.lineTo(dTR.sx,dTR.sy);
+        ctx.strokeStyle=`rgba(255,210,50,${da*.15})`;ctx.lineWidth=12;ctx.stroke();
+        ctx.strokeStyle=`rgba(255,220,65,${da*.88})`;ctx.lineWidth=1.7;ctx.stroke();
+
+        // Lock
+        const lk=bl(Q,.50,.64);
+        ctx.beginPath();ctx.arc(lk.sx,lk.sy,sz*.018,0,Math.PI*2);
+        ctx.fillStyle=`rgba(40,24,2,${da*.85})`;ctx.fill();
+        ctx.strokeStyle=`rgba(255,210,50,${da*.82})`;ctx.lineWidth=1.1;ctx.stroke();
+
+        // Vertical divider
+        const vMT=bl(Q,.50,dv1), vMB=bl(Q,.50,dv2);
+        ctx.beginPath();ctx.moveTo(vMT.sx,vMT.sy);ctx.lineTo(vMB.sx,vMB.sy);
+        ctx.strokeStyle=`rgba(255,210,50,${da*.35})`;ctx.lineWidth=.9;ctx.stroke();
+
+        // Horizontal rails
+        [.40,.56,.70].forEach(vr=>{
+          const L=bl(Q,du1,vr), R=bl(Q,du2,vr);
+          ctx.beginPath();ctx.moveTo(L.sx,L.sy);ctx.lineTo(R.sx,R.sy);
+          ctx.strokeStyle=`rgba(255,210,50,${da*.28})`;ctx.lineWidth=.8;ctx.stroke();
+        });
+
+        // Steps
+        [[.22,.82,.78,.91,.38],[.26,.91,.74,.98,.28]].forEach(([u1,v1,u2,v2,op])=>{
+          const sTL=bl(Q,u1,v1),sTR=bl(Q,u2,v1),sBL=bl(Q,u1,v2),sBR=bl(Q,u2,v2);
+          ctx.beginPath();
+          ctx.moveTo(sTL.sx,sTL.sy);ctx.lineTo(sTR.sx,sTR.sy);
+          ctx.lineTo(sBR.sx,sBR.sy);ctx.lineTo(sBL.sx,sBL.sy);ctx.closePath();
+          ctx.fillStyle='#0f0c0a';ctx.fill();
+          ctx.strokeStyle=`rgba(255,205,45,${da*op})`;ctx.lineWidth=.9;ctx.stroke();
+        });
+
+        // Hajar al-Aswad
+        const hj=bl(Q,1.0,.50);
+        const hjg=ctx.createRadialGradient(hj.sx,hj.sy,0,hj.sx,hj.sy,sz*.09);
+        hjg.addColorStop(0,'rgba(240,168,0,.28)');hjg.addColorStop(1,'transparent');
+        ctx.beginPath();ctx.arc(hj.sx,hj.sy,sz*.09,0,Math.PI*2);ctx.fillStyle=hjg;ctx.fill();
+        ctx.beginPath();ctx.arc(hj.sx,hj.sy,sz*.050,0,Math.PI*2);
+        ctx.fillStyle='#282420';ctx.fill();
+        ctx.strokeStyle='rgba(255,215,0,.68)';ctx.lineWidth=1.5;ctx.stroke();
+        ctx.beginPath();ctx.arc(hj.sx,hj.sy,sz*.026,0,Math.PI*2);
+        ctx.fillStyle='#110908';ctx.fill();
       }
     });
 
-    // Tawaf particles
-    for(let i=0;i<10;i++){
-      const ph=t*.24+i*(Math.PI*2/10);
-      const pp=proj(Math.cos(ph)*hw*1.42, hh*.87, Math.sin(ph)*hd*1.42);
-      const sc=pp.sc/(_fov/_dist);
-      const ps=(1.7+Math.sin(t*.85+i)*.5)*sc;
-      const op=.28+Math.sin(t*.55+i)*.14;
-      const g=ctx.createRadialGradient(pp.sx,pp.sy,0,pp.sx,pp.sy,ps*5);
-      g.addColorStop(0,`rgba(240,168,0,${op})`);g.addColorStop(1,'rgba(240,168,0,0)');
-      ctx.beginPath();ctx.arc(pp.sx,pp.sy,ps*5,0,Math.PI*2);ctx.fillStyle=g;ctx.fill();
-      ctx.beginPath();ctx.arc(pp.sx,pp.sy,Math.max(.4,ps*.55),0,Math.PI*2);
-      ctx.fillStyle=`rgba(255,228,130,${op+.22})`;ctx.fill();
-    }
+    // ── VERTICAL GOLD CORNER TRIM ──
+    const edgeFaces=[
+      {e:[0,4],f:['front','left']},
+      {e:[1,5],f:['front','right']},
+      {e:[2,6],f:['right','back']},
+      {e:[3,7],f:['left','back']},
+    ];
+    edgeFaces
+      .filter(ef=>ef.f.some(n=>faceNames.has(n)))
+      .sort((a,b)=>{
+        const za=(P[a.e[0]].z+P[a.e[1]].z)*.5;
+        const zb=(P[b.e[0]].z+P[b.e[1]].z)*.5;
+        return za-zb;
+      })
+      .forEach(ef=>{
+        const pt=P[ef.e[0]], pb=P[ef.e[1]];
+        ctx.beginPath();ctx.moveTo(pt.sx,pt.sy);ctx.lineTo(pb.sx,pb.sy);
+        ctx.strokeStyle='rgba(219,146,0,.14)';ctx.lineWidth=9;ctx.stroke();
+        ctx.beginPath();ctx.moveTo(pt.sx,pt.sy);ctx.lineTo(pb.sx,pb.sy);
+        ctx.strokeStyle='rgba(255,225,70,.72)';ctx.lineWidth=1.5;ctx.stroke();
+      });
 
-    // Ground shadow
-    const bots=[P[4],P[5],P[6],P[7]];
-    const gx=bots.reduce((s,p)=>s+p.sx,0)/4;
-    const gy=Math.max(...bots.map(p=>p.sy))+sz*.02;
-    const gr=hw*(_fov/_dist)*.9;
-    const sg=ctx.createRadialGradient(gx,gy,0,gx,gy,gr);
-    sg.addColorStop(0,'rgba(219,146,0,.11)');sg.addColorStop(1,'transparent');
-    ctx.beginPath();ctx.ellipse(gx,gy,gr,gr*.10,0,0,Math.PI*2);
-    ctx.fillStyle=sg;ctx.fill();
+    // ── TAWAF PARTICLES ──
+    for(let i=0;i<14;i++){
+      const ph=t*.21+i*(Math.PI*2/14);
+      const px=Math.cos(ph)*hw*1.55, pz=Math.sin(ph)*hd*1.55;
+      const pp=proj(px,hh*.92,pz);
+      const sc=Math.max(.3,pp.sc/(_fov/_dist));
+      const ps=(1.5+Math.sin(t*.8+i)*.5)*sc;
+      const op=.22+Math.sin(t*.5+i)*.11;
+      const g=ctx.createRadialGradient(pp.sx,pp.sy,0,pp.sx,pp.sy,ps*5.5);
+      g.addColorStop(0,`rgba(240,168,0,${op})`);g.addColorStop(1,'rgba(240,168,0,0)');
+      ctx.beginPath();ctx.arc(pp.sx,pp.sy,ps*5.5,0,Math.PI*2);ctx.fillStyle=g;ctx.fill();
+      ctx.beginPath();ctx.arc(pp.sx,pp.sy,Math.max(.35,ps*.48),0,Math.PI*2);
+      ctx.fillStyle=`rgba(255,232,130,${op+.20})`;ctx.fill();
+    }
   }
 
-  function loop(){t+=.016;rotY+=.003;draw();requestAnimationFrame(loop);}
+  function loop(){t+=.016;rotY+=.0022;draw();requestAnimationFrame(loop);}
   loop();
 })();
+
+
 
 
 // ── CARD TILT ──
